@@ -10,6 +10,13 @@
 		EE4072771DC731EB006AAE6C /* BusinessLogicLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072761DC731EB006AAE6C /* BusinessLogicLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE40727E1DC731EB006AAE6C /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4072731DC731EA006AAE6C /* BusinessLogicLayer.framework */; };
 		EE4072831DC731EB006AAE6C /* BusinessLogicLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072821DC731EB006AAE6C /* BusinessLogicLayerTests.m */; };
+		EE40728F1DC732DD006AAE6C /* HLTQuestionBL.h in Headers */ = {isa = PBXBuildFile; fileRef = EE40728D1DC732DD006AAE6C /* HLTQuestionBL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE4072901DC732DD006AAE6C /* HLTQuestionBL.m in Sources */ = {isa = PBXBuildFile; fileRef = EE40728E1DC732DD006AAE6C /* HLTQuestionBL.m */; };
+		EE4072931DC732E9006AAE6C /* HLTHeadlineBL.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072911DC732E9006AAE6C /* HLTHeadlineBL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE4072941DC732E9006AAE6C /* HLTHeadlineBL.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072921DC732E9006AAE6C /* HLTHeadlineBL.m */; };
+		EE4072971DC732FB006AAE6C /* HLTSpecialColumnBL.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072951DC732FB006AAE6C /* HLTSpecialColumnBL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE4072981DC732FB006AAE6C /* HLTSpecialColumnBL.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072961DC732FB006AAE6C /* HLTSpecialColumnBL.m */; };
+		EE40729C1DC739AE006AAE6C /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE40729B1DC739AE006AAE6C /* PersistenceLayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,13 @@
 		EE40727D1DC731EB006AAE6C /* BusinessLogicLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusinessLogicLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE4072821DC731EB006AAE6C /* BusinessLogicLayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusinessLogicLayerTests.m; sourceTree = "<group>"; };
 		EE4072841DC731EB006AAE6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE40728D1DC732DD006AAE6C /* HLTQuestionBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTQuestionBL.h; sourceTree = "<group>"; };
+		EE40728E1DC732DD006AAE6C /* HLTQuestionBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTQuestionBL.m; sourceTree = "<group>"; };
+		EE4072911DC732E9006AAE6C /* HLTHeadlineBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTHeadlineBL.h; sourceTree = "<group>"; };
+		EE4072921DC732E9006AAE6C /* HLTHeadlineBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTHeadlineBL.m; sourceTree = "<group>"; };
+		EE4072951DC732FB006AAE6C /* HLTSpecialColumnBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTSpecialColumnBL.h; sourceTree = "<group>"; };
+		EE4072961DC732FB006AAE6C /* HLTSpecialColumnBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTSpecialColumnBL.m; sourceTree = "<group>"; };
+		EE40729B1DC739AE006AAE6C /* PersistenceLayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PersistenceLayer.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/SegmentFault-Demo-eycgdzryfbusjqbcymckmaubtlpg/Build/Products/Debug-iphonesimulator/PersistenceLayer.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE40729C1DC739AE006AAE6C /* PersistenceLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +68,7 @@
 		EE4072691DC731EA006AAE6C = {
 			isa = PBXGroup;
 			children = (
+				EE40729B1DC739AE006AAE6C /* PersistenceLayer.framework */,
 				EE4072751DC731EB006AAE6C /* BusinessLogicLayer */,
 				EE4072811DC731EB006AAE6C /* BusinessLogicLayerTests */,
 				EE4072741DC731EA006AAE6C /* Products */,
@@ -73,6 +89,12 @@
 			children = (
 				EE4072761DC731EB006AAE6C /* BusinessLogicLayer.h */,
 				EE4072781DC731EB006AAE6C /* Info.plist */,
+				EE40728D1DC732DD006AAE6C /* HLTQuestionBL.h */,
+				EE40728E1DC732DD006AAE6C /* HLTQuestionBL.m */,
+				EE4072911DC732E9006AAE6C /* HLTHeadlineBL.h */,
+				EE4072921DC732E9006AAE6C /* HLTHeadlineBL.m */,
+				EE4072951DC732FB006AAE6C /* HLTSpecialColumnBL.h */,
+				EE4072961DC732FB006AAE6C /* HLTSpecialColumnBL.m */,
 			);
 			path = BusinessLogicLayer;
 			sourceTree = "<group>";
@@ -94,6 +116,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE4072771DC731EB006AAE6C /* BusinessLogicLayer.h in Headers */,
+				EE4072931DC732E9006AAE6C /* HLTHeadlineBL.h in Headers */,
+				EE40728F1DC732DD006AAE6C /* HLTQuestionBL.h in Headers */,
+				EE4072971DC732FB006AAE6C /* HLTSpecialColumnBL.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +220,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE4072941DC732E9006AAE6C /* HLTHeadlineBL.m in Sources */,
+				EE4072901DC732DD006AAE6C /* HLTQuestionBL.m in Sources */,
+				EE4072981DC732FB006AAE6C /* HLTSpecialColumnBL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +249,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -269,6 +298,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -320,6 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = honglt.BusinessLogicLayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -336,6 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = honglt.BusinessLogicLayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -378,6 +410,7 @@
 				EE4072891DC731EB006AAE6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE40728A1DC731EB006AAE6C /* Build configuration list for PBXNativeTarget "BusinessLogicLayerTests" */ = {
 			isa = XCConfigurationList;
@@ -386,6 +419,7 @@
 				EE40728C1DC731EB006AAE6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

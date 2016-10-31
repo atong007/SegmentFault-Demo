@@ -16,4 +16,6 @@ FOUNDATION_EXPORT const unsigned char BusinessLogicLayerVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <BusinessLogicLayer/PublicHeader.h>
 
-
+#import <BusinessLogicLayer/HLTQuestionBL.h>
+#import <BusinessLogicLayer/HLTHeadlineBL.h>
+#import <BusinessLogicLayer/HLTSpecialColumnBL.h>

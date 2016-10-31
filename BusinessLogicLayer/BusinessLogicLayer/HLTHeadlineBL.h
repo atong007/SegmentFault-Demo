@@ -10,4 +10,8 @@
 
 @interface HLTHeadlineBL : NSObject
 
+- (void)loadHeadlinesWithChannel:(NSString *)channel
+                            rank:(NSString *)rank
+                      success:(void (^)(NSArray *array))success
+                      failure:(void (^)(NSError *error))failure;
 @end

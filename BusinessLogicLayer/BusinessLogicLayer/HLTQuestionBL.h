@@ -10,4 +10,8 @@
 
 @interface HLTQuestionBL : NSObject
 
+- (void)loadQuestionsWithType:(NSString *)type
+                   parameters:(id)parameters
+                      success:(void (^)(NSArray *array))success
+                      failure:(void (^)(NSError *error))failure;
 @end
