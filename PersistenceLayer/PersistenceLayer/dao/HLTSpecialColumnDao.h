@@ -18,4 +18,6 @@
                            success:(void (^)(NSArray *array))success
                            failure:(void (^)(NSError *error))failure;
 
++ (instancetype)sharedInstance;
+
 @end

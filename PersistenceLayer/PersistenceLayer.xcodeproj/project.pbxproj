@@ -10,13 +10,13 @@
 		EE4071D81DC43EC2006AAE6C /* PersistenceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4071D71DC43EC2006AAE6C /* PersistenceLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE4071DF1DC43EC2006AAE6C /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4071D41DC43EC2006AAE6C /* PersistenceLayer.framework */; };
 		EE4071E41DC43EC2006AAE6C /* PersistenceLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4071E31DC43EC2006AAE6C /* PersistenceLayerTests.m */; };
-		EE40722F1DC49296006AAE6C /* HLTUserDao.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072261DC49296006AAE6C /* HLTUserDao.h */; };
+		EE40722F1DC49296006AAE6C /* HLTUserDao.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072261DC49296006AAE6C /* HLTUserDao.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE4072301DC49296006AAE6C /* HLTUserDao.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072271DC49296006AAE6C /* HLTUserDao.m */; };
-		EE4072311DC49296006AAE6C /* HLTQuestion.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072291DC49296006AAE6C /* HLTQuestion.h */; };
+		EE4072311DC49296006AAE6C /* HLTQuestion.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072291DC49296006AAE6C /* HLTQuestion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE4072321DC49296006AAE6C /* HLTQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = EE40722A1DC49296006AAE6C /* HLTQuestion.m */; };
-		EE4072331DC49296006AAE6C /* HLTUser.h in Headers */ = {isa = PBXBuildFile; fileRef = EE40722B1DC49296006AAE6C /* HLTUser.h */; };
+		EE4072331DC49296006AAE6C /* HLTUser.h in Headers */ = {isa = PBXBuildFile; fileRef = EE40722B1DC49296006AAE6C /* HLTUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE4072341DC49296006AAE6C /* HLTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = EE40722C1DC49296006AAE6C /* HLTUser.m */; };
-		EE4072371DC492BC006AAE6C /* HLTQuestionDao.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072351DC492BC006AAE6C /* HLTQuestionDao.h */; };
+		EE4072371DC492BC006AAE6C /* HLTQuestionDao.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072351DC492BC006AAE6C /* HLTQuestionDao.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE4072381DC492BC006AAE6C /* HLTQuestionDao.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072361DC492BC006AAE6C /* HLTQuestionDao.m */; };
 		EE40723C1DC5817E006AAE6C /* HLTHttpTool.h in Headers */ = {isa = PBXBuildFile; fileRef = EE40723A1DC5817E006AAE6C /* HLTHttpTool.h */; };
 		EE40723D1DC5817E006AAE6C /* HLTHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EE40723B1DC5817E006AAE6C /* HLTHttpTool.m */; };
@@ -33,13 +33,13 @@
 		EE4072561DC581C7006AAE6C /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072491DC581C7006AAE6C /* AFURLResponseSerialization.m */; };
 		EE4072571DC581C7006AAE6C /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EE40724A1DC581C7006AAE6C /* AFURLSessionManager.h */; };
 		EE4072581DC581C7006AAE6C /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE40724B1DC581C7006AAE6C /* AFURLSessionManager.m */; };
-		EE40725B1DC72B05006AAE6C /* HLTHeadline.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072591DC72B05006AAE6C /* HLTHeadline.h */; };
+		EE40725B1DC72B05006AAE6C /* HLTHeadline.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072591DC72B05006AAE6C /* HLTHeadline.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE40725C1DC72B05006AAE6C /* HLTHeadline.m in Sources */ = {isa = PBXBuildFile; fileRef = EE40725A1DC72B05006AAE6C /* HLTHeadline.m */; };
-		EE40725F1DC72BBD006AAE6C /* HLTSpecialColumn.h in Headers */ = {isa = PBXBuildFile; fileRef = EE40725D1DC72BBD006AAE6C /* HLTSpecialColumn.h */; };
+		EE40725F1DC72BBD006AAE6C /* HLTSpecialColumn.h in Headers */ = {isa = PBXBuildFile; fileRef = EE40725D1DC72BBD006AAE6C /* HLTSpecialColumn.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE4072601DC72BBD006AAE6C /* HLTSpecialColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = EE40725E1DC72BBD006AAE6C /* HLTSpecialColumn.m */; };
-		EE4072631DC72E21006AAE6C /* HLTHeadlineDao.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072611DC72E21006AAE6C /* HLTHeadlineDao.h */; };
+		EE4072631DC72E21006AAE6C /* HLTHeadlineDao.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072611DC72E21006AAE6C /* HLTHeadlineDao.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE4072641DC72E21006AAE6C /* HLTHeadlineDao.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072621DC72E21006AAE6C /* HLTHeadlineDao.m */; };
-		EE4072671DC72EAB006AAE6C /* HLTSpecialColumnDao.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072651DC72EAB006AAE6C /* HLTSpecialColumnDao.h */; };
+		EE4072671DC72EAB006AAE6C /* HLTSpecialColumnDao.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072651DC72EAB006AAE6C /* HLTSpecialColumnDao.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE4072681DC72EAB006AAE6C /* HLTSpecialColumnDao.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072661DC72EAB006AAE6C /* HLTSpecialColumnDao.m */; };
 /* End PBXBuildFile section */
 
@@ -219,21 +219,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE4072531DC581C7006AAE6C /* AFURLRequestSerialization.h in Headers */,
-				EE40724F1DC581C7006AAE6C /* AFNetworkReachabilityManager.h in Headers */,
-				EE4072511DC581C7006AAE6C /* AFSecurityPolicy.h in Headers */,
 				EE4072371DC492BC006AAE6C /* HLTQuestionDao.h in Headers */,
 				EE4072331DC49296006AAE6C /* HLTUser.h in Headers */,
 				EE4072671DC72EAB006AAE6C /* HLTSpecialColumnDao.h in Headers */,
-				EE4071D81DC43EC2006AAE6C /* PersistenceLayer.h in Headers */,
-				EE40724E1DC581C7006AAE6C /* AFNetworking.h in Headers */,
-				EE4072571DC581C7006AAE6C /* AFURLSessionManager.h in Headers */,
 				EE40722F1DC49296006AAE6C /* HLTUserDao.h in Headers */,
 				EE40725B1DC72B05006AAE6C /* HLTHeadline.h in Headers */,
 				EE40725F1DC72BBD006AAE6C /* HLTSpecialColumn.h in Headers */,
-				EE40724C1DC581C7006AAE6C /* AFHTTPSessionManager.h in Headers */,
 				EE4072631DC72E21006AAE6C /* HLTHeadlineDao.h in Headers */,
-				EE4072551DC581C7006AAE6C /* AFURLResponseSerialization.h in Headers */,
 				EE4072311DC49296006AAE6C /* HLTQuestion.h in Headers */,
+				EE40724F1DC581C7006AAE6C /* AFNetworkReachabilityManager.h in Headers */,
+				EE4072511DC581C7006AAE6C /* AFSecurityPolicy.h in Headers */,
+				EE4071D81DC43EC2006AAE6C /* PersistenceLayer.h in Headers */,
+				EE40724E1DC581C7006AAE6C /* AFNetworking.h in Headers */,
+				EE4072571DC581C7006AAE6C /* AFURLSessionManager.h in Headers */,
+				EE40724C1DC581C7006AAE6C /* AFHTTPSessionManager.h in Headers */,
+				EE4072551DC581C7006AAE6C /* AFURLResponseSerialization.h in Headers */,
 				EE40723C1DC5817E006AAE6C /* HLTHttpTool.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +476,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = honglt.PersistenceLayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -492,6 +493,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = honglt.PersistenceLayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
