@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE4071D81DC43EC2006AAE6C /* PersistenceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4071D71DC43EC2006AAE6C /* PersistenceLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE4071DF1DC43EC2006AAE6C /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4071D41DC43EC2006AAE6C /* PersistenceLayer.framework */; };
+		EE4071E41DC43EC2006AAE6C /* PersistenceLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4071E31DC43EC2006AAE6C /* PersistenceLayerTests.m */; };
+		EE40722F1DC49296006AAE6C /* HLTUserDao.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072261DC49296006AAE6C /* HLTUserDao.h */; };
+		EE4072301DC49296006AAE6C /* HLTUserDao.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072271DC49296006AAE6C /* HLTUserDao.m */; };
+		EE4072311DC49296006AAE6C /* HLTQuestion.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072291DC49296006AAE6C /* HLTQuestion.h */; };
+		EE4072321DC49296006AAE6C /* HLTQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = EE40722A1DC49296006AAE6C /* HLTQuestion.m */; };
+		EE4072331DC49296006AAE6C /* HLTUser.h in Headers */ = {isa = PBXBuildFile; fileRef = EE40722B1DC49296006AAE6C /* HLTUser.h */; };
+		EE4072341DC49296006AAE6C /* HLTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = EE40722C1DC49296006AAE6C /* HLTUser.m */; };
+		EE4072371DC492BC006AAE6C /* HLTQuestionDao.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072351DC492BC006AAE6C /* HLTQuestionDao.h */; };
+		EE4072381DC492BC006AAE6C /* HLTQuestionDao.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072361DC492BC006AAE6C /* HLTQuestionDao.m */; };
+		EE40723C1DC5817E006AAE6C /* HLTHttpTool.h in Headers */ = {isa = PBXBuildFile; fileRef = EE40723A1DC5817E006AAE6C /* HLTHttpTool.h */; };
+		EE40723D1DC5817E006AAE6C /* HLTHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EE40723B1DC5817E006AAE6C /* HLTHttpTool.m */; };
+		EE40724C1DC581C7006AAE6C /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EE40723F1DC581C7006AAE6C /* AFHTTPSessionManager.h */; };
+		EE40724D1DC581C7006AAE6C /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072401DC581C7006AAE6C /* AFHTTPSessionManager.m */; };
+		EE40724E1DC581C7006AAE6C /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072411DC581C7006AAE6C /* AFNetworking.h */; };
+		EE40724F1DC581C7006AAE6C /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072421DC581C7006AAE6C /* AFNetworkReachabilityManager.h */; };
+		EE4072501DC581C7006AAE6C /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072431DC581C7006AAE6C /* AFNetworkReachabilityManager.m */; };
+		EE4072511DC581C7006AAE6C /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072441DC581C7006AAE6C /* AFSecurityPolicy.h */; };
+		EE4072521DC581C7006AAE6C /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072451DC581C7006AAE6C /* AFSecurityPolicy.m */; };
+		EE4072531DC581C7006AAE6C /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072461DC581C7006AAE6C /* AFURLRequestSerialization.h */; };
+		EE4072541DC581C7006AAE6C /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072471DC581C7006AAE6C /* AFURLRequestSerialization.m */; };
+		EE4072551DC581C7006AAE6C /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072481DC581C7006AAE6C /* AFURLResponseSerialization.h */; };
+		EE4072561DC581C7006AAE6C /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072491DC581C7006AAE6C /* AFURLResponseSerialization.m */; };
+		EE4072571DC581C7006AAE6C /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EE40724A1DC581C7006AAE6C /* AFURLSessionManager.h */; };
+		EE4072581DC581C7006AAE6C /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE40724B1DC581C7006AAE6C /* AFURLSessionManager.m */; };
+		EE40725B1DC72B05006AAE6C /* HLTHeadline.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072591DC72B05006AAE6C /* HLTHeadline.h */; };
+		EE40725C1DC72B05006AAE6C /* HLTHeadline.m in Sources */ = {isa = PBXBuildFile; fileRef = EE40725A1DC72B05006AAE6C /* HLTHeadline.m */; };
+		EE40725F1DC72BBD006AAE6C /* HLTSpecialColumn.h in Headers */ = {isa = PBXBuildFile; fileRef = EE40725D1DC72BBD006AAE6C /* HLTSpecialColumn.h */; };
+		EE4072601DC72BBD006AAE6C /* HLTSpecialColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = EE40725E1DC72BBD006AAE6C /* HLTSpecialColumn.m */; };
+		EE4072631DC72E21006AAE6C /* HLTHeadlineDao.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072611DC72E21006AAE6C /* HLTHeadlineDao.h */; };
+		EE4072641DC72E21006AAE6C /* HLTHeadlineDao.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072621DC72E21006AAE6C /* HLTHeadlineDao.m */; };
+		EE4072671DC72EAB006AAE6C /* HLTSpecialColumnDao.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072651DC72EAB006AAE6C /* HLTSpecialColumnDao.h */; };
+		EE4072681DC72EAB006AAE6C /* HLTSpecialColumnDao.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072661DC72EAB006AAE6C /* HLTSpecialColumnDao.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE4071E01DC43EC2006AAE6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE4071CB1DC43EC2006AAE6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE4071D31DC43EC2006AAE6C;
+			remoteInfo = PersistenceLayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE4071D41DC43EC2006AAE6C /* PersistenceLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PersistenceLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE4071D71DC43EC2006AAE6C /* PersistenceLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersistenceLayer.h; sourceTree = "<group>"; };
+		EE4071D91DC43EC2006AAE6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE4071DE1DC43EC2006AAE6C /* PersistenceLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersistenceLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE4071E31DC43EC2006AAE6C /* PersistenceLayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersistenceLayerTests.m; sourceTree = "<group>"; };
+		EE4071E51DC43EC2006AAE6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE4072261DC49296006AAE6C /* HLTUserDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTUserDao.h; sourceTree = "<group>"; };
+		EE4072271DC49296006AAE6C /* HLTUserDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTUserDao.m; sourceTree = "<group>"; };
+		EE4072291DC49296006AAE6C /* HLTQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTQuestion.h; sourceTree = "<group>"; };
+		EE40722A1DC49296006AAE6C /* HLTQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTQuestion.m; sourceTree = "<group>"; };
+		EE40722B1DC49296006AAE6C /* HLTUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTUser.h; sourceTree = "<group>"; };
+		EE40722C1DC49296006AAE6C /* HLTUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTUser.m; sourceTree = "<group>"; };
+		EE4072351DC492BC006AAE6C /* HLTQuestionDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTQuestionDao.h; sourceTree = "<group>"; };
+		EE4072361DC492BC006AAE6C /* HLTQuestionDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTQuestionDao.m; sourceTree = "<group>"; };
+		EE40723A1DC5817E006AAE6C /* HLTHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTHttpTool.h; sourceTree = "<group>"; };
+		EE40723B1DC5817E006AAE6C /* HLTHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTHttpTool.m; sourceTree = "<group>"; };
+		EE40723F1DC581C7006AAE6C /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		EE4072401DC581C7006AAE6C /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		EE4072411DC581C7006AAE6C /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		EE4072421DC581C7006AAE6C /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		EE4072431DC581C7006AAE6C /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		EE4072441DC581C7006AAE6C /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		EE4072451DC581C7006AAE6C /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		EE4072461DC581C7006AAE6C /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		EE4072471DC581C7006AAE6C /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		EE4072481DC581C7006AAE6C /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		EE4072491DC581C7006AAE6C /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		EE40724A1DC581C7006AAE6C /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		EE40724B1DC581C7006AAE6C /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		EE4072591DC72B05006AAE6C /* HLTHeadline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTHeadline.h; sourceTree = "<group>"; };
+		EE40725A1DC72B05006AAE6C /* HLTHeadline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTHeadline.m; sourceTree = "<group>"; };
+		EE40725D1DC72BBD006AAE6C /* HLTSpecialColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTSpecialColumn.h; sourceTree = "<group>"; };
+		EE40725E1DC72BBD006AAE6C /* HLTSpecialColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTSpecialColumn.m; sourceTree = "<group>"; };
+		EE4072611DC72E21006AAE6C /* HLTHeadlineDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTHeadlineDao.h; sourceTree = "<group>"; };
+		EE4072621DC72E21006AAE6C /* HLTHeadlineDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTHeadlineDao.m; sourceTree = "<group>"; };
+		EE4072651DC72EAB006AAE6C /* HLTSpecialColumnDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTSpecialColumnDao.h; sourceTree = "<group>"; };
+		EE4072661DC72EAB006AAE6C /* HLTSpecialColumnDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTSpecialColumnDao.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE4071D01DC43EC2006AAE6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE4071DB1DC43EC2006AAE6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE4071DF1DC43EC2006AAE6C /* PersistenceLayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE4071CA1DC43EC2006AAE6C = {
+			isa = PBXGroup;
+			children = (
+				EE4071D61DC43EC2006AAE6C /* PersistenceLayer */,
+				EE40723E1DC581C7006AAE6C /* AFNetworking */,
+				EE4071E21DC43EC2006AAE6C /* PersistenceLayerTests */,
+				EE4071D51DC43EC2006AAE6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE4071D51DC43EC2006AAE6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE4071D41DC43EC2006AAE6C /* PersistenceLayer.framework */,
+				EE4071DE1DC43EC2006AAE6C /* PersistenceLayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE4071D61DC43EC2006AAE6C /* PersistenceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				EE4072391DC5816E006AAE6C /* httpTool */,
+				EE4072231DC49296006AAE6C /* dao */,
+				EE4072281DC49296006AAE6C /* domain */,
+				EE4071D71DC43EC2006AAE6C /* PersistenceLayer.h */,
+				EE4071D91DC43EC2006AAE6C /* Info.plist */,
+			);
+			path = PersistenceLayer;
+			sourceTree = "<group>";
+		};
+		EE4071E21DC43EC2006AAE6C /* PersistenceLayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE4071E31DC43EC2006AAE6C /* PersistenceLayerTests.m */,
+				EE4071E51DC43EC2006AAE6C /* Info.plist */,
+			);
+			path = PersistenceLayerTests;
+			sourceTree = "<group>";
+		};
+		EE4072231DC49296006AAE6C /* dao */ = {
+			isa = PBXGroup;
+			children = (
+				EE4072261DC49296006AAE6C /* HLTUserDao.h */,
+				EE4072271DC49296006AAE6C /* HLTUserDao.m */,
+				EE4072351DC492BC006AAE6C /* HLTQuestionDao.h */,
+				EE4072361DC492BC006AAE6C /* HLTQuestionDao.m */,
+				EE4072611DC72E21006AAE6C /* HLTHeadlineDao.h */,
+				EE4072621DC72E21006AAE6C /* HLTHeadlineDao.m */,
+				EE4072651DC72EAB006AAE6C /* HLTSpecialColumnDao.h */,
+				EE4072661DC72EAB006AAE6C /* HLTSpecialColumnDao.m */,
+			);
+			path = dao;
+			sourceTree = "<group>";
+		};
+		EE4072281DC49296006AAE6C /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				EE4072291DC49296006AAE6C /* HLTQuestion.h */,
+				EE40722A1DC49296006AAE6C /* HLTQuestion.m */,
+				EE40722B1DC49296006AAE6C /* HLTUser.h */,
+				EE40722C1DC49296006AAE6C /* HLTUser.m */,
+				EE4072591DC72B05006AAE6C /* HLTHeadline.h */,
+				EE40725A1DC72B05006AAE6C /* HLTHeadline.m */,
+				EE40725D1DC72BBD006AAE6C /* HLTSpecialColumn.h */,
+				EE40725E1DC72BBD006AAE6C /* HLTSpecialColumn.m */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		EE4072391DC5816E006AAE6C /* httpTool */ = {
+			isa = PBXGroup;
+			children = (
+				EE40723A1DC5817E006AAE6C /* HLTHttpTool.h */,
+				EE40723B1DC5817E006AAE6C /* HLTHttpTool.m */,
+			);
+			path = httpTool;
+			sourceTree = "<group>";
+		};
+		EE40723E1DC581C7006AAE6C /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				EE40723F1DC581C7006AAE6C /* AFHTTPSessionManager.h */,
+				EE4072401DC581C7006AAE6C /* AFHTTPSessionManager.m */,
+				EE4072411DC581C7006AAE6C /* AFNetworking.h */,
+				EE4072421DC581C7006AAE6C /* AFNetworkReachabilityManager.h */,
+				EE4072431DC581C7006AAE6C /* AFNetworkReachabilityManager.m */,
+				EE4072441DC581C7006AAE6C /* AFSecurityPolicy.h */,
+				EE4072451DC581C7006AAE6C /* AFSecurityPolicy.m */,
+				EE4072461DC581C7006AAE6C /* AFURLRequestSerialization.h */,
+				EE4072471DC581C7006AAE6C /* AFURLRequestSerialization.m */,
+				EE4072481DC581C7006AAE6C /* AFURLResponseSerialization.h */,
+				EE4072491DC581C7006AAE6C /* AFURLResponseSerialization.m */,
+				EE40724A1DC581C7006AAE6C /* AFURLSessionManager.h */,
+				EE40724B1DC581C7006AAE6C /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EE4071D11DC43EC2006AAE6C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE4072531DC581C7006AAE6C /* AFURLRequestSerialization.h in Headers */,
+				EE40724F1DC581C7006AAE6C /* AFNetworkReachabilityManager.h in Headers */,
+				EE4072511DC581C7006AAE6C /* AFSecurityPolicy.h in Headers */,
+				EE4072371DC492BC006AAE6C /* HLTQuestionDao.h in Headers */,
+				EE4072331DC49296006AAE6C /* HLTUser.h in Headers */,
+				EE4072671DC72EAB006AAE6C /* HLTSpecialColumnDao.h in Headers */,
+				EE4071D81DC43EC2006AAE6C /* PersistenceLayer.h in Headers */,
+				EE40724E1DC581C7006AAE6C /* AFNetworking.h in Headers */,
+				EE4072571DC581C7006AAE6C /* AFURLSessionManager.h in Headers */,
+				EE40722F1DC49296006AAE6C /* HLTUserDao.h in Headers */,
+				EE40725B1DC72B05006AAE6C /* HLTHeadline.h in Headers */,
+				EE40725F1DC72BBD006AAE6C /* HLTSpecialColumn.h in Headers */,
+				EE40724C1DC581C7006AAE6C /* AFHTTPSessionManager.h in Headers */,
+				EE4072631DC72E21006AAE6C /* HLTHeadlineDao.h in Headers */,
+				EE4072551DC581C7006AAE6C /* AFURLResponseSerialization.h in Headers */,
+				EE4072311DC49296006AAE6C /* HLTQuestion.h in Headers */,
+				EE40723C1DC5817E006AAE6C /* HLTHttpTool.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EE4071D31DC43EC2006AAE6C /* PersistenceLayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE4071E81DC43EC2006AAE6C /* Build configuration list for PBXNativeTarget "PersistenceLayer" */;
+			buildPhases = (
+				EE4071CF1DC43EC2006AAE6C /* Sources */,
+				EE4071D01DC43EC2006AAE6C /* Frameworks */,
+				EE4071D11DC43EC2006AAE6C /* Headers */,
+				EE4071D21DC43EC2006AAE6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PersistenceLayer;
+			productName = PersistenceLayer;
+			productReference = EE4071D41DC43EC2006AAE6C /* PersistenceLayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EE4071DD1DC43EC2006AAE6C /* PersistenceLayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE4071EB1DC43EC2006AAE6C /* Build configuration list for PBXNativeTarget "PersistenceLayerTests" */;
+			buildPhases = (
+				EE4071DA1DC43EC2006AAE6C /* Sources */,
+				EE4071DB1DC43EC2006AAE6C /* Frameworks */,
+				EE4071DC1DC43EC2006AAE6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE4071E11DC43EC2006AAE6C /* PBXTargetDependency */,
+			);
+			name = PersistenceLayerTests;
+			productName = PersistenceLayerTests;
+			productReference = EE4071DE1DC43EC2006AAE6C /* PersistenceLayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE4071CB1DC43EC2006AAE6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Atong007;
+				TargetAttributes = {
+					EE4071D31DC43EC2006AAE6C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = GRT2DH3R4P;
+					};
+					EE4071DD1DC43EC2006AAE6C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = GRT2DH3R4P;
+					};
+				};
+			};
+			buildConfigurationList = EE4071CE1DC43EC2006AAE6C /* Build configuration list for PBXProject "PersistenceLayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EE4071CA1DC43EC2006AAE6C;
+			productRefGroup = EE4071D51DC43EC2006AAE6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE4071D31DC43EC2006AAE6C /* PersistenceLayer */,
+				EE4071DD1DC43EC2006AAE6C /* PersistenceLayerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE4071D21DC43EC2006AAE6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE4071DC1DC43EC2006AAE6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE4071CF1DC43EC2006AAE6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE4072681DC72EAB006AAE6C /* HLTSpecialColumnDao.m in Sources */,
+				EE4072541DC581C7006AAE6C /* AFURLRequestSerialization.m in Sources */,
+				EE4072301DC49296006AAE6C /* HLTUserDao.m in Sources */,
+				EE40725C1DC72B05006AAE6C /* HLTHeadline.m in Sources */,
+				EE40723D1DC5817E006AAE6C /* HLTHttpTool.m in Sources */,
+				EE4072321DC49296006AAE6C /* HLTQuestion.m in Sources */,
+				EE4072581DC581C7006AAE6C /* AFURLSessionManager.m in Sources */,
+				EE4072561DC581C7006AAE6C /* AFURLResponseSerialization.m in Sources */,
+				EE4072501DC581C7006AAE6C /* AFNetworkReachabilityManager.m in Sources */,
+				EE4072601DC72BBD006AAE6C /* HLTSpecialColumn.m in Sources */,
+				EE4072521DC581C7006AAE6C /* AFSecurityPolicy.m in Sources */,
+				EE40724D1DC581C7006AAE6C /* AFHTTPSessionManager.m in Sources */,
+				EE4072341DC49296006AAE6C /* HLTUser.m in Sources */,
+				EE4072381DC492BC006AAE6C /* HLTQuestionDao.m in Sources */,
+				EE4072641DC72E21006AAE6C /* HLTHeadlineDao.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE4071DA1DC43EC2006AAE6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE4071E41DC43EC2006AAE6C /* PersistenceLayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE4071E11DC43EC2006AAE6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE4071D31DC43EC2006AAE6C /* PersistenceLayer */;
+			targetProxy = EE4071E01DC43EC2006AAE6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EE4071E61DC43EC2006AAE6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EE4071E71DC43EC2006AAE6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EE4071E91DC43EC2006AAE6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PersistenceLayer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = honglt.PersistenceLayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EE4071EA1DC43EC2006AAE6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PersistenceLayer/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = honglt.PersistenceLayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EE4071EC1DC43EC2006AAE6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PersistenceLayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = honglt.PersistenceLayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE4071ED1DC43EC2006AAE6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PersistenceLayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = honglt.PersistenceLayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE4071CE1DC43EC2006AAE6C /* Build configuration list for PBXProject "PersistenceLayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE4071E61DC43EC2006AAE6C /* Debug */,
+				EE4071E71DC43EC2006AAE6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE4071E81DC43EC2006AAE6C /* Build configuration list for PBXNativeTarget "PersistenceLayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE4071E91DC43EC2006AAE6C /* Debug */,
+				EE4071EA1DC43EC2006AAE6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE4071EB1DC43EC2006AAE6C /* Build configuration list for PBXNativeTarget "PersistenceLayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE4071EC1DC43EC2006AAE6C /* Debug */,
+				EE4071ED1DC43EC2006AAE6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE4071CB1DC43EC2006AAE6C /* Project object */;
+}

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E58B9269F659C5391E997D108E712BE8230607C8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E58B9269F659C5391E997D108E712BE8230607C8" : 0,
+    "5ACB243BF004DF4490DC1B23ED4CF14ACA52B3DA" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "77E7FCEB-6E27-4513-90CF-1DAE258C5380",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E58B9269F659C5391E997D108E712BE8230607C8" : "SegmentFault-Demo\/",
+    "5ACB243BF004DF4490DC1B23ED4CF14ACA52B3DA" : "..\/.."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SegmentFault-Demo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SegmentFault-Demo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/atong007\/RioOlympics2016.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5ACB243BF004DF4490DC1B23ED4CF14ACA52B3DA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/atong007\/SegmentFault-Demo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E58B9269F659C5391E997D108E712BE8230607C8"
+    }
+  ]
+}
