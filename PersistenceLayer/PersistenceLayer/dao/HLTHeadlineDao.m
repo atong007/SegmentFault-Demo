@@ -12,6 +12,15 @@
 
 @implementation HLTHeadlineDao
 
++ (instancetype)sharedInstance {
+    static HLTHeadlineDao *headlineDao = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        headlineDao = [[HLTHeadlineDao alloc] init];
+    });
+    return headlineDao;
+}
+
 - (void)loadHeadlinesWithURLString:(NSString *)url parameters:(id)parameters success:(void (^)(NSArray *))success failure:(void (^)(NSError *))failure
 {
     [HLTHttpTool httpOfGetMethodWithURLString:url parameters:parameters success:^(NSArray *responseObject) {

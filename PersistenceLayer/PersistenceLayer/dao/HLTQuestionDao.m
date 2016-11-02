@@ -12,6 +12,16 @@
 
 @implementation HLTQuestionDao
 
+
++ (instancetype)sharedInstance {
+    static HLTQuestionDao *questionDao = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        questionDao = [[HLTQuestionDao alloc] init];
+    });
+    return questionDao;
+}
+
 - (void)loadQuestionsWithURLString:(NSString *)url parameters:(id)parameters success:(void (^)(NSArray *))success failure:(void (^)(NSError *))failure
 {
 	[HLTHttpTool httpOfGetMethodWithURLString:url parameters:parameters success:^(NSArray *responseObject) {
@@ -29,4 +39,5 @@
         }
     }];
 }
+
 @end
