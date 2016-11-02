@@ -23,6 +23,9 @@
 
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key
 {
+    if ([key isEqualToString:@"user"]) {
+        self.userName = value[@"name"];
+    }
     return;
 }
 @end

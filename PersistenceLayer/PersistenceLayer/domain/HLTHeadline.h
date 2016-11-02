@@ -14,6 +14,7 @@
 @property (nonatomic, copy) NSString *createdDate;
 @property (nonatomic, strong) NSNumber *votesWord;
 @property (nonatomic, strong) NSNumber *comments;
+@property (nonatomic, copy) NSString *userName;
 @property (nonatomic, copy) NSString *readFirstImg;
 @property (nonatomic, copy) NSArray *newsTypes;
 
