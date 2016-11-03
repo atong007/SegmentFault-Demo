@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE4072AB1DC7456A006AAE6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072AA1DC7456A006AAE6C /* main.m */; };
+		EE4072C41DC7456A006AAE6C /* SegmentFault_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072C31DC7456A006AAE6C /* SegmentFault_DemoTests.m */; };
+		EE4072DD1DC74D84006AAE6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE4072D91DC74D84006AAE6C /* Assets.xcassets */; };
+		EE4072DE1DC74D84006AAE6C /* HLTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072DB1DC74D84006AAE6C /* HLTAppDelegate.m */; };
+		EE4072E81DC74F58006AAE6C /* HLTHeadlineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072E71DC74F58006AAE6C /* HLTHeadlineViewController.m */; };
+		EE4072EE1DC74F9F006AAE6C /* HLTQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072ED1DC74F9F006AAE6C /* HLTQuestionViewController.m */; };
+		EE4072F11DC74FB7006AAE6C /* HLTSpecialColumnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072F01DC74FB7006AAE6C /* HLTSpecialColumnViewController.m */; };
+		EE4072F31DC750C5006AAE6C /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4072F21DC750C5006AAE6C /* BusinessLogicLayer.framework */; };
+		EE4072F51DC75210006AAE6C /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4072F41DC75210006AAE6C /* PersistenceLayer.framework */; };
+		EE4072F71DC75299006AAE6C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE4072F61DC75299006AAE6C /* Info.plist */; };
+		EE4072FB1DC75C02006AAE6C /* HLTHeadlineViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072F91DC75C02006AAE6C /* HLTHeadlineViewCell.m */; };
+		EE4072FC1DC75C02006AAE6C /* HLTHeadlineViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4072FA1DC75C02006AAE6C /* HLTHeadlineViewCell.xib */; };
+		EE4073021DC89795006AAE6C /* HLTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4073011DC89795006AAE6C /* HLTTabBarController.m */; };
+		EE4073051DC89879006AAE6C /* HLTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4073041DC89879006AAE6C /* HLTTabBar.m */; };
+		EE4073081DC8C349006AAE6C /* HLTTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4073071DC8C349006AAE6C /* HLTTabBarButton.m */; };
+		EE4073111DC8DD96006AAE6C /* HLTMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4073101DC8DD96006AAE6C /* HLTMineViewController.m */; };
+		EE4073151DC8E267006AAE6C /* UIImage+HLTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4073141DC8E267006AAE6C /* UIImage+HLTExtension.m */; };
+		EE4073211DC9E01A006AAE6C /* HLTNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4073201DC9E01A006AAE6C /* HLTNavigationBar.m */; };
+		EE4073271DC9E4FE006AAE6C /* HLTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4073261DC9E4FE006AAE6C /* HLTNavigationController.m */; };
+		EE4073291DC9EFB9006AAE6C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE4073281DC9EFB9006AAE6C /* Launch Screen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE4072C01DC7456A006AAE6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE40729E1DC7456A006AAE6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE4072A51DC7456A006AAE6C;
+			remoteInfo = "SegmentFault-Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE4072A61DC7456A006AAE6C /* SegmentFault-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SegmentFault-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE4072AA1DC7456A006AAE6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE4072BF1DC7456A006AAE6C /* SegmentFault-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SegmentFault-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE4072C31DC7456A006AAE6C /* SegmentFault_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentFault_DemoTests.m; sourceTree = "<group>"; };
+		EE4072C51DC7456A006AAE6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE4072D91DC74D84006AAE6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE4072DA1DC74D84006AAE6C /* HLTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTAppDelegate.h; sourceTree = "<group>"; };
+		EE4072DB1DC74D84006AAE6C /* HLTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTAppDelegate.m; sourceTree = "<group>"; };
+		EE4072E61DC74F58006AAE6C /* HLTHeadlineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTHeadlineViewController.h; sourceTree = "<group>"; };
+		EE4072E71DC74F58006AAE6C /* HLTHeadlineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTHeadlineViewController.m; sourceTree = "<group>"; };
+		EE4072EC1DC74F9F006AAE6C /* HLTQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTQuestionViewController.h; sourceTree = "<group>"; };
+		EE4072ED1DC74F9F006AAE6C /* HLTQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTQuestionViewController.m; sourceTree = "<group>"; };
+		EE4072EF1DC74FB7006AAE6C /* HLTSpecialColumnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTSpecialColumnViewController.h; sourceTree = "<group>"; };
+		EE4072F01DC74FB7006AAE6C /* HLTSpecialColumnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTSpecialColumnViewController.m; sourceTree = "<group>"; };
+		EE4072F21DC750C5006AAE6C /* BusinessLogicLayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BusinessLogicLayer.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/SegmentFault-Demo-bebuzzzintowlkerqaktyjjyyrsu/Build/Products/Debug-iphonesimulator/BusinessLogicLayer.framework"; sourceTree = "<group>"; };
+		EE4072F41DC75210006AAE6C /* PersistenceLayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PersistenceLayer.framework; path = "../PersistenceLayer/build/Debug-iphoneos/PersistenceLayer.framework"; sourceTree = "<group>"; };
+		EE4072F61DC75299006AAE6C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE4072F81DC75C02006AAE6C /* HLTHeadlineViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTHeadlineViewCell.h; sourceTree = "<group>"; };
+		EE4072F91DC75C02006AAE6C /* HLTHeadlineViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTHeadlineViewCell.m; sourceTree = "<group>"; };
+		EE4072FA1DC75C02006AAE6C /* HLTHeadlineViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLTHeadlineViewCell.xib; sourceTree = "<group>"; };
+		EE4073001DC89795006AAE6C /* HLTTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTTabBarController.h; sourceTree = "<group>"; };
+		EE4073011DC89795006AAE6C /* HLTTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTTabBarController.m; sourceTree = "<group>"; };
+		EE4073031DC89879006AAE6C /* HLTTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTTabBar.h; sourceTree = "<group>"; };
+		EE4073041DC89879006AAE6C /* HLTTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTTabBar.m; sourceTree = "<group>"; };
+		EE4073061DC8C349006AAE6C /* HLTTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTTabBarButton.h; sourceTree = "<group>"; };
+		EE4073071DC8C349006AAE6C /* HLTTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTTabBarButton.m; sourceTree = "<group>"; };
+		EE40730F1DC8DD96006AAE6C /* HLTMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTMineViewController.h; sourceTree = "<group>"; };
+		EE4073101DC8DD96006AAE6C /* HLTMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTMineViewController.m; sourceTree = "<group>"; };
+		EE4073131DC8E267006AAE6C /* UIImage+HLTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HLTExtension.h"; sourceTree = "<group>"; };
+		EE4073141DC8E267006AAE6C /* UIImage+HLTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HLTExtension.m"; sourceTree = "<group>"; };
+		EE40731F1DC9E01A006AAE6C /* HLTNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTNavigationBar.h; sourceTree = "<group>"; };
+		EE4073201DC9E01A006AAE6C /* HLTNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTNavigationBar.m; sourceTree = "<group>"; };
+		EE4073251DC9E4FE006AAE6C /* HLTNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTNavigationController.h; sourceTree = "<group>"; };
+		EE4073261DC9E4FE006AAE6C /* HLTNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTNavigationController.m; sourceTree = "<group>"; };
+		EE4073281DC9EFB9006AAE6C /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "../../Launch Screen.storyboard"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE4072A31DC7456A006AAE6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE4072F51DC75210006AAE6C /* PersistenceLayer.framework in Frameworks */,
+				EE4072F31DC750C5006AAE6C /* BusinessLogicLayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE4072BC1DC7456A006AAE6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE40729D1DC7456A006AAE6C = {
+			isa = PBXGroup;
+			children = (
+				EE4072F41DC75210006AAE6C /* PersistenceLayer.framework */,
+				EE4072F21DC750C5006AAE6C /* BusinessLogicLayer.framework */,
+				EE4072A81DC7456A006AAE6C /* SegmentFault-Demo */,
+				EE4072C21DC7456A006AAE6C /* SegmentFault-DemoTests */,
+				EE4072A71DC7456A006AAE6C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE4072A71DC7456A006AAE6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE4072A61DC7456A006AAE6C /* SegmentFault-Demo.app */,
+				EE4072BF1DC7456A006AAE6C /* SegmentFault-DemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE4072A81DC7456A006AAE6C /* SegmentFault-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				EE4072FD1DC8975D006AAE6C /* Main */,
+				EE4072D41DC74D4C006AAE6C /* Headline(头条) */,
+				EE4072D61DC74D4C006AAE6C /* Q&A(问答) */,
+				EE4072D71DC74D4C006AAE6C /* SpecialColumn(专栏) */,
+				EE40730C1DC8DD74006AAE6C /* Mine(我) */,
+				EE4072A91DC7456A006AAE6C /* Supporting Files */,
+			);
+			path = "SegmentFault-Demo";
+			sourceTree = "<group>";
+		};
+		EE4072A91DC7456A006AAE6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE4072D81DC74D84006AAE6C /* Others */,
+				EE4072AA1DC7456A006AAE6C /* main.m */,
+				EE4072F61DC75299006AAE6C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE4072C21DC7456A006AAE6C /* SegmentFault-DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE4072C31DC7456A006AAE6C /* SegmentFault_DemoTests.m */,
+				EE4072C51DC7456A006AAE6C /* Info.plist */,
+			);
+			path = "SegmentFault-DemoTests";
+			sourceTree = "<group>";
+		};
+		EE4072D41DC74D4C006AAE6C /* Headline(头条) */ = {
+			isa = PBXGroup;
+			children = (
+				EE4072E01DC74DBA006AAE6C /* Controller */,
+				EE4072E11DC74DBA006AAE6C /* View */,
+			);
+			path = "Headline(头条)";
+			sourceTree = "<group>";
+		};
+		EE4072D61DC74D4C006AAE6C /* Q&A(问答) */ = {
+			isa = PBXGroup;
+			children = (
+				EE4072E21DC74DC3006AAE6C /* Controller */,
+				EE4072E31DC74DC3006AAE6C /* View */,
+			);
+			path = "Q&A(问答)";
+			sourceTree = "<group>";
+		};
+		EE4072D71DC74D4C006AAE6C /* SpecialColumn(专栏) */ = {
+			isa = PBXGroup;
+			children = (
+				EE4072E41DC74DCF006AAE6C /* Controller */,
+				EE4072E51DC74DCF006AAE6C /* View */,
+			);
+			path = "SpecialColumn(专栏)";
+			sourceTree = "<group>";
+		};
+		EE4072D81DC74D84006AAE6C /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				EE4073121DC8E267006AAE6C /* Extension */,
+				EE4072D91DC74D84006AAE6C /* Assets.xcassets */,
+				EE4073281DC9EFB9006AAE6C /* Launch Screen.storyboard */,
+				EE4072DA1DC74D84006AAE6C /* HLTAppDelegate.h */,
+				EE4072DB1DC74D84006AAE6C /* HLTAppDelegate.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		EE4072E01DC74DBA006AAE6C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE4072E61DC74F58006AAE6C /* HLTHeadlineViewController.h */,
+				EE4072E71DC74F58006AAE6C /* HLTHeadlineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EE4072E11DC74DBA006AAE6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE4072F81DC75C02006AAE6C /* HLTHeadlineViewCell.h */,
+				EE4072F91DC75C02006AAE6C /* HLTHeadlineViewCell.m */,
+				EE4072FA1DC75C02006AAE6C /* HLTHeadlineViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE4072E21DC74DC3006AAE6C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE4072EC1DC74F9F006AAE6C /* HLTQuestionViewController.h */,
+				EE4072ED1DC74F9F006AAE6C /* HLTQuestionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EE4072E31DC74DC3006AAE6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE4072E41DC74DCF006AAE6C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE4072EF1DC74FB7006AAE6C /* HLTSpecialColumnViewController.h */,
+				EE4072F01DC74FB7006AAE6C /* HLTSpecialColumnViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EE4072E51DC74DCF006AAE6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE4072FD1DC8975D006AAE6C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EE4072FE1DC8975D006AAE6C /* Controller */,
+				EE4072FF1DC8975D006AAE6C /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EE4072FE1DC8975D006AAE6C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE4073001DC89795006AAE6C /* HLTTabBarController.h */,
+				EE4073011DC89795006AAE6C /* HLTTabBarController.m */,
+				EE4073251DC9E4FE006AAE6C /* HLTNavigationController.h */,
+				EE4073261DC9E4FE006AAE6C /* HLTNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EE4072FF1DC8975D006AAE6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE4073031DC89879006AAE6C /* HLTTabBar.h */,
+				EE4073041DC89879006AAE6C /* HLTTabBar.m */,
+				EE4073061DC8C349006AAE6C /* HLTTabBarButton.h */,
+				EE4073071DC8C349006AAE6C /* HLTTabBarButton.m */,
+				EE40731F1DC9E01A006AAE6C /* HLTNavigationBar.h */,
+				EE4073201DC9E01A006AAE6C /* HLTNavigationBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE40730C1DC8DD74006AAE6C /* Mine(我) */ = {
+			isa = PBXGroup;
+			children = (
+				EE40730D1DC8DD74006AAE6C /* Controller */,
+				EE40730E1DC8DD74006AAE6C /* View */,
+			);
+			path = "Mine(我)";
+			sourceTree = "<group>";
+		};
+		EE40730D1DC8DD74006AAE6C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE40730F1DC8DD96006AAE6C /* HLTMineViewController.h */,
+				EE4073101DC8DD96006AAE6C /* HLTMineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EE40730E1DC8DD74006AAE6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE4073121DC8E267006AAE6C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EE4073131DC8E267006AAE6C /* UIImage+HLTExtension.h */,
+				EE4073141DC8E267006AAE6C /* UIImage+HLTExtension.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE4072A51DC7456A006AAE6C /* SegmentFault-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE4072C81DC7456A006AAE6C /* Build configuration list for PBXNativeTarget "SegmentFault-Demo" */;
+			buildPhases = (
+				EE4072A21DC7456A006AAE6C /* Sources */,
+				EE4072A31DC7456A006AAE6C /* Frameworks */,
+				EE4072A41DC7456A006AAE6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SegmentFault-Demo";
+			productName = "SegmentFault-Demo";
+			productReference = EE4072A61DC7456A006AAE6C /* SegmentFault-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE4072BE1DC7456A006AAE6C /* SegmentFault-DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE4072CB1DC7456A006AAE6C /* Build configuration list for PBXNativeTarget "SegmentFault-DemoTests" */;
+			buildPhases = (
+				EE4072BB1DC7456A006AAE6C /* Sources */,
+				EE4072BC1DC7456A006AAE6C /* Frameworks */,
+				EE4072BD1DC7456A006AAE6C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE4072C11DC7456A006AAE6C /* PBXTargetDependency */,
+			);
+			name = "SegmentFault-DemoTests";
+			productName = "SegmentFault-DemoTests";
+			productReference = EE4072BF1DC7456A006AAE6C /* SegmentFault-DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE40729E1DC7456A006AAE6C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Atong007;
+				TargetAttributes = {
+					EE4072A51DC7456A006AAE6C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = GRT2DH3R4P;
+					};
+					EE4072BE1DC7456A006AAE6C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = GRT2DH3R4P;
+						TestTargetID = EE4072A51DC7456A006AAE6C;
+					};
+				};
+			};
+			buildConfigurationList = EE4072A11DC7456A006AAE6C /* Build configuration list for PBXProject "SegmentFault-Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE40729D1DC7456A006AAE6C;
+			productRefGroup = EE4072A71DC7456A006AAE6C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE4072A51DC7456A006AAE6C /* SegmentFault-Demo */,
+				EE4072BE1DC7456A006AAE6C /* SegmentFault-DemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE4072A41DC7456A006AAE6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE4072F71DC75299006AAE6C /* Info.plist in Resources */,
+				EE4072FC1DC75C02006AAE6C /* HLTHeadlineViewCell.xib in Resources */,
+				EE4073291DC9EFB9006AAE6C /* Launch Screen.storyboard in Resources */,
+				EE4072DD1DC74D84006AAE6C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE4072BD1DC7456A006AAE6C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE4072A21DC7456A006AAE6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE4072AB1DC7456A006AAE6C /* main.m in Sources */,
+				EE4073081DC8C349006AAE6C /* HLTTabBarButton.m in Sources */,
+				EE4073211DC9E01A006AAE6C /* HLTNavigationBar.m in Sources */,
+				EE4073151DC8E267006AAE6C /* UIImage+HLTExtension.m in Sources */,
+				EE4072EE1DC74F9F006AAE6C /* HLTQuestionViewController.m in Sources */,
+				EE4073051DC89879006AAE6C /* HLTTabBar.m in Sources */,
+				EE4072DE1DC74D84006AAE6C /* HLTAppDelegate.m in Sources */,
+				EE4072F11DC74FB7006AAE6C /* HLTSpecialColumnViewController.m in Sources */,
+				EE4073271DC9E4FE006AAE6C /* HLTNavigationController.m in Sources */,
+				EE4072E81DC74F58006AAE6C /* HLTHeadlineViewController.m in Sources */,
+				EE4073111DC8DD96006AAE6C /* HLTMineViewController.m in Sources */,
+				EE4072FB1DC75C02006AAE6C /* HLTHeadlineViewCell.m in Sources */,
+				EE4073021DC89795006AAE6C /* HLTTabBarController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE4072BB1DC7456A006AAE6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE4072C41DC7456A006AAE6C /* SegmentFault_DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE4072C11DC7456A006AAE6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE4072A51DC7456A006AAE6C /* SegmentFault-Demo */;
+			targetProxy = EE4072C01DC7456A006AAE6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EE4072C61DC7456A006AAE6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EE4072C71DC7456A006AAE6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE4072C91DC7456A006AAE6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "SegmentFault-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "honglt.SegmentFault-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE4072CA1DC7456A006AAE6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "SegmentFault-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "honglt.SegmentFault-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EE4072CC1DC7456A006AAE6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "SegmentFault-DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "honglt.SegmentFault-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SegmentFault-Demo.app/SegmentFault-Demo";
+			};
+			name = Debug;
+		};
+		EE4072CD1DC7456A006AAE6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "SegmentFault-DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "honglt.SegmentFault-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SegmentFault-Demo.app/SegmentFault-Demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE4072A11DC7456A006AAE6C /* Build configuration list for PBXProject "SegmentFault-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE4072C61DC7456A006AAE6C /* Debug */,
+				EE4072C71DC7456A006AAE6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE4072C81DC7456A006AAE6C /* Build configuration list for PBXNativeTarget "SegmentFault-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE4072C91DC7456A006AAE6C /* Debug */,
+				EE4072CA1DC7456A006AAE6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EE4072CB1DC7456A006AAE6C /* Build configuration list for PBXNativeTarget "SegmentFault-DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE4072CC1DC7456A006AAE6C /* Debug */,
+				EE4072CD1DC7456A006AAE6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE40729E1DC7456A006AAE6C /* Project object */;
+}

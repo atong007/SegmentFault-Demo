@@ -7,4 +7,7 @@
    <FileRef
       location = "group:PersistenceLayer/PersistenceLayer.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:SegmentFault-Demo/SegmentFault-Demo.xcodeproj">
+   </FileRef>
 </Workspace>
