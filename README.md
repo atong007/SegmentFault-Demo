@@ -2,7 +2,7 @@
 仿制segmentfault客户端，仅作学习参考!
 
 ![Alt Text](https://github.com/atong007/SegmentFault-Demo/blob/master/segmentfault-demo1.gif)
-
+![Alt Text](https://github.com/atong007/SegmentFault-Demo/blob/master/segmentfault-demo2.gif)
 ##实现部分的页面及功能，后续有待更新
 
 ###TODO
