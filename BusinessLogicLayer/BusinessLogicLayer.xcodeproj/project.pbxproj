@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE088C961DCDFCEB00BFC241 /* HLTActivityBL.h in Headers */ = {isa = PBXBuildFile; fileRef = EE088C941DCDFCEB00BFC241 /* HLTActivityBL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE088C971DCDFCEB00BFC241 /* HLTActivityBL.m in Sources */ = {isa = PBXBuildFile; fileRef = EE088C951DCDFCEB00BFC241 /* HLTActivityBL.m */; };
+		EE088CA31DCE046500BFC241 /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE088CA21DCE046500BFC241 /* PersistenceLayer.framework */; };
 		EE4072771DC731EB006AAE6C /* BusinessLogicLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072761DC731EB006AAE6C /* BusinessLogicLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE40727E1DC731EB006AAE6C /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4072731DC731EA006AAE6C /* BusinessLogicLayer.framework */; };
 		EE4072831DC731EB006AAE6C /* BusinessLogicLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072821DC731EB006AAE6C /* BusinessLogicLayerTests.m */; };
@@ -16,7 +19,6 @@
 		EE4072941DC732E9006AAE6C /* HLTHeadlineBL.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072921DC732E9006AAE6C /* HLTHeadlineBL.m */; };
 		EE4072971DC732FB006AAE6C /* HLTSpecialColumnBL.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4072951DC732FB006AAE6C /* HLTSpecialColumnBL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE4072981DC732FB006AAE6C /* HLTSpecialColumnBL.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4072961DC732FB006AAE6C /* HLTSpecialColumnBL.m */; };
-		EE40729C1DC739AE006AAE6C /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE40729B1DC739AE006AAE6C /* PersistenceLayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE088C941DCDFCEB00BFC241 /* HLTActivityBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTActivityBL.h; sourceTree = "<group>"; };
+		EE088C951DCDFCEB00BFC241 /* HLTActivityBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTActivityBL.m; sourceTree = "<group>"; };
+		EE088CA21DCE046500BFC241 /* PersistenceLayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PersistenceLayer.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/SegmentFault-Demo-bebuzzzintowlkerqaktyjjyyrsu/Build/Products/Debug-iphonesimulator/PersistenceLayer.framework"; sourceTree = "<group>"; };
 		EE4072731DC731EA006AAE6C /* BusinessLogicLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BusinessLogicLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE4072761DC731EB006AAE6C /* BusinessLogicLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BusinessLogicLayer.h; sourceTree = "<group>"; };
 		EE4072781DC731EB006AAE6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,7 +47,6 @@
 		EE4072921DC732E9006AAE6C /* HLTHeadlineBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTHeadlineBL.m; sourceTree = "<group>"; };
 		EE4072951DC732FB006AAE6C /* HLTSpecialColumnBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTSpecialColumnBL.h; sourceTree = "<group>"; };
 		EE4072961DC732FB006AAE6C /* HLTSpecialColumnBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTSpecialColumnBL.m; sourceTree = "<group>"; };
-		EE40729B1DC739AE006AAE6C /* PersistenceLayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PersistenceLayer.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/SegmentFault-Demo-eycgdzryfbusjqbcymckmaubtlpg/Build/Products/Debug-iphonesimulator/PersistenceLayer.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE40729C1DC739AE006AAE6C /* PersistenceLayer.framework in Frameworks */,
+				EE088CA31DCE046500BFC241 /* PersistenceLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,7 +72,7 @@
 		EE4072691DC731EA006AAE6C = {
 			isa = PBXGroup;
 			children = (
-				EE40729B1DC739AE006AAE6C /* PersistenceLayer.framework */,
+				EE088CA21DCE046500BFC241 /* PersistenceLayer.framework */,
 				EE4072751DC731EB006AAE6C /* BusinessLogicLayer */,
 				EE4072811DC731EB006AAE6C /* BusinessLogicLayerTests */,
 				EE4072741DC731EA006AAE6C /* Products */,
@@ -95,6 +99,8 @@
 				EE4072921DC732E9006AAE6C /* HLTHeadlineBL.m */,
 				EE4072951DC732FB006AAE6C /* HLTSpecialColumnBL.h */,
 				EE4072961DC732FB006AAE6C /* HLTSpecialColumnBL.m */,
+				EE088C941DCDFCEB00BFC241 /* HLTActivityBL.h */,
+				EE088C951DCDFCEB00BFC241 /* HLTActivityBL.m */,
 			);
 			path = BusinessLogicLayer;
 			sourceTree = "<group>";
@@ -117,6 +123,7 @@
 			files = (
 				EE4072771DC731EB006AAE6C /* BusinessLogicLayer.h in Headers */,
 				EE4072931DC732E9006AAE6C /* HLTHeadlineBL.h in Headers */,
+				EE088C961DCDFCEB00BFC241 /* HLTActivityBL.h in Headers */,
 				EE40728F1DC732DD006AAE6C /* HLTQuestionBL.h in Headers */,
 				EE4072971DC732FB006AAE6C /* HLTSpecialColumnBL.h in Headers */,
 			);
@@ -221,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE4072941DC732E9006AAE6C /* HLTHeadlineBL.m in Sources */,
+				EE088C971DCDFCEB00BFC241 /* HLTActivityBL.m in Sources */,
 				EE4072901DC732DD006AAE6C /* HLTQuestionBL.m in Sources */,
 				EE4072981DC732FB006AAE6C /* HLTSpecialColumnBL.m in Sources */,
 			);

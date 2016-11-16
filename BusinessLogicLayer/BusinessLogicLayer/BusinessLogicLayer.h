@@ -19,3 +19,5 @@ FOUNDATION_EXPORT const unsigned char BusinessLogicLayerVersionString[];
 #import <BusinessLogicLayer/HLTQuestionBL.h>
 #import <BusinessLogicLayer/HLTHeadlineBL.h>
 #import <BusinessLogicLayer/HLTSpecialColumnBL.h>
+#import <BusinessLogicLayer/HLTActivityBL.h>
+
