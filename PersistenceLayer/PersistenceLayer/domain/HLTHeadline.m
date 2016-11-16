@@ -21,6 +21,14 @@
     return self;
 }
 
+- (void)setReadFirstImg:(NSString *)readFirstImg
+{
+    _readFirstImg = readFirstImg;
+    if (_readFirstImg && ![_readFirstImg containsString:@"http"]) {
+        _readFirstImg = [@"https://segmentfault.com" stringByAppendingString:_readFirstImg];
+    }
+}
+
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key
 {
     if ([key isEqualToString:@"user"]) {

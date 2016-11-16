@@ -1,16 +1,17 @@
 //
-//  HLTSpecialColumn.m
+//  HLTActivity.m
 //  PersistenceLayer
 //
-//  Created by 洪龙通 on 2016/10/31.
+//  Created by 洪龙通 on 2016/11/5.
 //  Copyright © 2016年 Atong007. All rights reserved.
 //
 
-#import "HLTSpecialColumn.h"
+#import "HLTActivity.h"
 
-@implementation HLTSpecialColumn
+@implementation HLTActivity
 
-+ (instancetype)specialColumnWithDictionary:(NSDictionary *)dict {
+
++ (instancetype)activityWithDictionary:(NSDictionary *)dict {
     return [[self alloc] initWithDictionary:dict];
 }
 
@@ -23,9 +24,6 @@
 
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key
 {
-    if ([key isEqualToString:@"user"]) {
-        self.userName = value[@"name"];
-    }
     return;
 }
 @end

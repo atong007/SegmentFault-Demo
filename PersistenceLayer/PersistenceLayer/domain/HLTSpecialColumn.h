@@ -12,8 +12,8 @@
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *excerpt;
-@property (nonatomic, strong) NSNumber *votes;
-@property (nonatomic, strong) NSNumber *bookmarks;
+@property (nonatomic, copy) NSString *votes;
+@property (nonatomic, copy) NSString *bookmarks;
 @property (nonatomic, copy) NSString *userName;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dict;

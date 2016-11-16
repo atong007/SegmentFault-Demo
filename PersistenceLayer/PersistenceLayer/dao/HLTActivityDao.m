@@ -1,33 +1,33 @@
 //
-//  HLTSpecialColumnDao.m
+//  HLTActivityDao.m
 //  PersistenceLayer
 //
-//  Created by 洪龙通 on 2016/10/31.
+//  Created by 洪龙通 on 2016/11/5.
 //  Copyright © 2016年 Atong007. All rights reserved.
 //
 
-#import "HLTSpecialColumnDao.h"
-#import "HLTSpecialColumn.h"
+#import "HLTActivityDao.h"
 #import "HLTHttpTool.h"
+#import "HLTActivity.h"
 
-@implementation HLTSpecialColumnDao
+@implementation HLTActivityDao
 
 + (instancetype)sharedInstance {
-    static HLTSpecialColumnDao *specailColumnDao = nil;
+    static HLTActivityDao *activityDao = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        specailColumnDao = [[HLTSpecialColumnDao alloc] init];
+        activityDao = [[HLTActivityDao alloc] init];
     });
-    return specailColumnDao;
+    return activityDao;
 }
 
-- (void)loadSpecialColumnsWithURLString:(NSString *)url parameters:(id)parameters success:(void (^)(NSArray *))success failure:(void (^)(NSError *))failure
+- (void)loadActivityWithURLString:(NSString *)url parameters:(id)parameters success:(void (^)(NSArray *))success failure:(void (^)(NSError *))failure
 {
     [HLTHttpTool httpOfGetMethodWithURLString:url parameters:parameters success:^(NSArray *responseObject) {
         
         NSMutableArray *mutableArray = [NSMutableArray array];
         for (NSDictionary *dict in responseObject) {
-            HLTSpecialColumn *specialColumn = [HLTSpecialColumn specialColumnWithDictionary:dict];
+            HLTActivity *specialColumn = [HLTActivity activityWithDictionary:dict];
             [mutableArray addObject:specialColumn];
         }
         success(mutableArray);

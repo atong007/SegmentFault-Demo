@@ -12,7 +12,7 @@
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *createdDate;
-@property (nonatomic, strong) NSNumber *answers;
+@property (nonatomic, copy) NSString *answers;
 @property (nonatomic, copy) NSArray *tags;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dict;

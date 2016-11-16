@@ -19,5 +19,12 @@ FOUNDATION_EXPORT const unsigned char PersistenceLayerVersionString[];
 #import <PersistenceLayer/HLTHeadlineDao.h>
 #import <PersistenceLayer/HLTSpecialColumnDao.h>
 #import <PersistenceLayer/HLTUserDao.h>
+#import <PersistenceLayer/HLTActivityDao.h>
+#import <PersistenceLayer/HLTQuestion.h>
+#import <PersistenceLayer/HLTHeadline.h>
+#import <PersistenceLayer/HLTSpecialColumn.h>
+#import <PersistenceLayer/HLTUser.h>
+#import <PersistenceLayer/HLTActivity.h>
+
 
 

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE088C9A1DCDFE5800BFC241 /* HLTActivityDao.h in Headers */ = {isa = PBXBuildFile; fileRef = EE088C981DCDFE5800BFC241 /* HLTActivityDao.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE088C9B1DCDFE5800BFC241 /* HLTActivityDao.m in Sources */ = {isa = PBXBuildFile; fileRef = EE088C991DCDFE5800BFC241 /* HLTActivityDao.m */; };
+		EE088C9E1DCDFE6400BFC241 /* HLTActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = EE088C9C1DCDFE6400BFC241 /* HLTActivity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE088C9F1DCDFE6400BFC241 /* HLTActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = EE088C9D1DCDFE6400BFC241 /* HLTActivity.m */; };
 		EE4071D81DC43EC2006AAE6C /* PersistenceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4071D71DC43EC2006AAE6C /* PersistenceLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE4071DF1DC43EC2006AAE6C /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4071D41DC43EC2006AAE6C /* PersistenceLayer.framework */; };
 		EE4071E41DC43EC2006AAE6C /* PersistenceLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4071E31DC43EC2006AAE6C /* PersistenceLayerTests.m */; };
@@ -54,6 +58,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE088C981DCDFE5800BFC241 /* HLTActivityDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTActivityDao.h; sourceTree = "<group>"; };
+		EE088C991DCDFE5800BFC241 /* HLTActivityDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTActivityDao.m; sourceTree = "<group>"; };
+		EE088C9C1DCDFE6400BFC241 /* HLTActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTActivity.h; sourceTree = "<group>"; };
+		EE088C9D1DCDFE6400BFC241 /* HLTActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTActivity.m; sourceTree = "<group>"; };
 		EE4071D41DC43EC2006AAE6C /* PersistenceLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PersistenceLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE4071D71DC43EC2006AAE6C /* PersistenceLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersistenceLayer.h; sourceTree = "<group>"; };
 		EE4071D91DC43EC2006AAE6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -163,6 +171,8 @@
 				EE4072621DC72E21006AAE6C /* HLTHeadlineDao.m */,
 				EE4072651DC72EAB006AAE6C /* HLTSpecialColumnDao.h */,
 				EE4072661DC72EAB006AAE6C /* HLTSpecialColumnDao.m */,
+				EE088C981DCDFE5800BFC241 /* HLTActivityDao.h */,
+				EE088C991DCDFE5800BFC241 /* HLTActivityDao.m */,
 			);
 			path = dao;
 			sourceTree = "<group>";
@@ -178,6 +188,8 @@
 				EE40725A1DC72B05006AAE6C /* HLTHeadline.m */,
 				EE40725D1DC72BBD006AAE6C /* HLTSpecialColumn.h */,
 				EE40725E1DC72BBD006AAE6C /* HLTSpecialColumn.m */,
+				EE088C9C1DCDFE6400BFC241 /* HLTActivity.h */,
+				EE088C9D1DCDFE6400BFC241 /* HLTActivity.m */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -224,6 +236,8 @@
 				EE4072671DC72EAB006AAE6C /* HLTSpecialColumnDao.h in Headers */,
 				EE40722F1DC49296006AAE6C /* HLTUserDao.h in Headers */,
 				EE40725B1DC72B05006AAE6C /* HLTHeadline.h in Headers */,
+				EE088C9E1DCDFE6400BFC241 /* HLTActivity.h in Headers */,
+				EE088C9A1DCDFE5800BFC241 /* HLTActivityDao.h in Headers */,
 				EE40725F1DC72BBD006AAE6C /* HLTSpecialColumn.h in Headers */,
 				EE4072631DC72E21006AAE6C /* HLTHeadlineDao.h in Headers */,
 				EE4072311DC49296006AAE6C /* HLTQuestion.h in Headers */,
@@ -340,11 +354,13 @@
 				EE4072541DC581C7006AAE6C /* AFURLRequestSerialization.m in Sources */,
 				EE4072301DC49296006AAE6C /* HLTUserDao.m in Sources */,
 				EE40725C1DC72B05006AAE6C /* HLTHeadline.m in Sources */,
+				EE088C9B1DCDFE5800BFC241 /* HLTActivityDao.m in Sources */,
 				EE40723D1DC5817E006AAE6C /* HLTHttpTool.m in Sources */,
 				EE4072321DC49296006AAE6C /* HLTQuestion.m in Sources */,
 				EE4072581DC581C7006AAE6C /* AFURLSessionManager.m in Sources */,
 				EE4072561DC581C7006AAE6C /* AFURLResponseSerialization.m in Sources */,
 				EE4072501DC581C7006AAE6C /* AFNetworkReachabilityManager.m in Sources */,
+				EE088C9F1DCDFE6400BFC241 /* HLTActivity.m in Sources */,
 				EE4072601DC72BBD006AAE6C /* HLTSpecialColumn.m in Sources */,
 				EE4072521DC581C7006AAE6C /* AFSecurityPolicy.m in Sources */,
 				EE40724D1DC581C7006AAE6C /* AFHTTPSessionManager.m in Sources */,
