@@ -15,4 +15,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *createdDateLabel;
 @property (weak, nonatomic) IBOutlet UIButton *commentButton;
 @property (weak, nonatomic) IBOutlet UIButton *voteButton;
+@property (weak, nonatomic) IBOutlet UIImageView *thumbImageView;
 @end

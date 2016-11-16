@@ -9,6 +9,7 @@
 #import "HLTQuestionViewController.h"
 #import "BusinessLogicLayer/HLTQuestionBL.h"
 #import "PersistenceLayer/HLTQuestion.h"
+#import "HLTQuesiontViewCell.h"
 
 @interface HLTQuestionViewController ()
 
@@ -17,10 +18,33 @@
 
 @implementation HLTQuestionViewController
 
+static NSString *reuseID = @"UITableViewCell";
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self loadQuestionList];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self loadQuestionList];
+    self.tableView.rowHeight = 88;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    // 注册cell
+    [self.tableView registerClass:[HLTQuesiontViewCell class] forCellReuseIdentifier:reuseID];
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    // 需要将navigationBar的frame高度设置为100，navigationBar上头的按钮无法响应，因为navigationBar会被重置为原来的大小，所以超过原有范围的按钮也无法响应
+    self.navigationController.navigationBar.frame = CGRectMake(0, 20, self.view.frame.size.width, 100);
 }
 
 - (NSArray *)questionsArray
@@ -57,14 +81,11 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //1.创建cell
-    static NSString *reuseID = @"UITableViewCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseID];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseID];
-    }
+    HLTQuesiontViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseID];
+    
     //2.传递数据模型来设置cell属性
     HLTQuestion *question = self.questionsArray[indexPath.row];
-    cell.textLabel.text = question.title;
+    cell.question = question;
     
     //3.返回cell
     return cell;

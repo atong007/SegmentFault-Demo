@@ -10,8 +10,6 @@
 #import "HLTTabBarButton.h"
 #import "UIImage+HLTExtension.h"
 
-#define kColorWithRGB(r, g, b) [UIColor colorWithRed:(r) green:(g) blue:(b) alpha:1.0]
-
 @interface HLTTabBar()
 
 @property (nonatomic, strong) HLTTabBarButton *selectedButton;

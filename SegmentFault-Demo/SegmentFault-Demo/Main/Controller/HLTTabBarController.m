@@ -13,7 +13,11 @@
 #import "HLTSpecialColumnViewController.h"
 #import "HLTMineViewController.h"
 #import "HLTNavigationController.h"
-#import "HLTNavigationBar.h"
+#import "HLTHeadlineNavigationController.h"
+#import "HLTQuestionNavigationController.h"
+#import "HLTDiscoverViewController.h"
+#import "HLTSpecialColumnNavigationController.h"
+
 
 @interface HLTTabBarController () <HLTTabBarDelegate>
 
@@ -24,13 +28,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+        
     // 创建自定义的TabBar
     [self setupTabBar];
     
     // 创建添加所有的子控制器
     [self setupViewControllers];
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -64,28 +67,31 @@
     // 1.头条控制器
     HLTHeadlineViewController *headlineVC = [[HLTHeadlineViewController alloc] init];
     [self setupViewControllerWithController:headlineVC title:@"头条" imageName:@"headline_tab_icon_27x27_" selectedImageName:@"headline_tab_icon_selected_27x27_"];
-    HLTNavigationController *headlineNavi = [[HLTNavigationController alloc] initWithRootViewController:headlineVC];
+    HLTHeadlineNavigationController *headlineNavi = [[HLTHeadlineNavigationController alloc] initWithRootViewController:headlineVC];
 
-    
     HLTSpecialColumnViewController *specialColumnVC = [[HLTSpecialColumnViewController alloc] init];
     [self setupViewControllerWithController:specialColumnVC title:@"专栏" imageName:@"article_tab_icon_27x27_" selectedImageName:@"article_tab_icon_selected_27x27_"];
-    HLTNavigationController *specialColumnNavi = [[HLTNavigationController alloc] initWithRootViewController:specialColumnVC];
+    HLTSpecialColumnNavigationController *specialColumnNavi = [[HLTSpecialColumnNavigationController alloc] initWithRootViewController:specialColumnVC];
     
     HLTQuestionViewController *questionVC = [[HLTQuestionViewController alloc] init];
     [self setupViewControllerWithController:questionVC title:@"问答" imageName:@"question_tab_icon_27x27_" selectedImageName:@"question_tab_icon_selected_27x27_"];
-    HLTNavigationController *questionNavi = [[HLTNavigationController alloc] initWithRootViewController:questionVC];
-
+    HLTQuestionNavigationController *questionNavi = [[HLTQuestionNavigationController alloc] initWithRootViewController:questionVC];
+    
+    HLTDiscoverViewController *discoverVC = [[HLTDiscoverViewController alloc] init];
+    [self setupViewControllerWithController:discoverVC title:@"发现" imageName:@"circle_tab_icon_27x27_" selectedImageName:@"circle_tab_icon_selected_27x27_"];
+    HLTNavigationController *discoverNavi = [[HLTNavigationController alloc] initWithRootViewController:discoverVC];
     
     HLTMineViewController *mineVC = [[HLTMineViewController alloc] init];
     [self setupViewControllerWithController:mineVC title:@"我" imageName:@"mine_tab_icon_27x27_" selectedImageName:@"mine_tab_icon_selected_27x27_"];
+    HLTNavigationController *mineNavi = [[HLTNavigationController alloc] initWithRootViewController:mineVC];
     
-    self.viewControllers = @[headlineNavi, specialColumnNavi, questionNavi, mineVC];
+    self.viewControllers = @[headlineNavi, specialColumnNavi, questionNavi, discoverNavi, mineNavi];
 }
 
 - (void)setupViewControllerWithController:(id)VC title:(NSString *)title imageName:(NSString *)image selectedImageName:(NSString *)selectedImage
 {
     UIViewController *viewController = VC;
-    viewController.title = title;
+    viewController.tabBarItem.title = title;
     viewController.tabBarItem.image = [UIImage imageNamed:image];
     viewController.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
     

@@ -4,18 +4,25 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5ACB243BF004DF4490DC1B23ED4CF14ACA52B3DA" : 0,
     "E58B9269F659C5391E997D108E712BE8230607C8" : 0,
-    "5ACB243BF004DF4490DC1B23ED4CF14ACA52B3DA" : 0
+    "4182765C525509B305166AB949D5935FD5C85212" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "77E7FCEB-6E27-4513-90CF-1DAE258C5380",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5ACB243BF004DF4490DC1B23ED4CF14ACA52B3DA" : "..\/..",
     "E58B9269F659C5391E997D108E712BE8230607C8" : "SegmentFault-Demo\/",
-    "5ACB243BF004DF4490DC1B23ED4CF14ACA52B3DA" : "..\/.."
+    "4182765C525509B305166AB949D5935FD5C85212" : "SegmentFault-Demo\/SegmentFault-Demo\/SegmentFault-Demo\/Others\/MBProgressHUD\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "SegmentFault-Demo",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SegmentFault-Demo.xcworkspace",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jdg\/MBProgressHUD.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4182765C525509B305166AB949D5935FD5C85212"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/atong007\/RioOlympics2016.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",

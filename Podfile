@@ -1,0 +1,5 @@
+workspace 'SegmentFault-Demo'
+xcodeproj 'SegmentFault-Demo/SegmentFault-Demo.xcodeproj'
+platform:ios,'9.3'
+pod 'Masonry'
+pod 'UITableView+FDTemplateLayoutCell', '~> 1.5.beta'

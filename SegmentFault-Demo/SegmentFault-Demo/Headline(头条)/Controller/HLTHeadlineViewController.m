@@ -10,7 +10,7 @@
 #import "BusinessLogicLayer/HLTHeadlineBL.h"
 #import "PersistenceLayer/HLTHeadline.h"
 #import "HLTHeadlineViewCell.h"
-
+#import "UIImageView+WebCache.h"
 
 @interface HLTHeadlineViewController ()
 
@@ -19,17 +19,30 @@
 
 @implementation HLTHeadlineViewController
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self loadHeadlineList];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self loadHeadlineList];
-    
     self.tableView.rowHeight = 80;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    self.tableView.contentInset = UIEdgeInsetsMake(60, 0, 0, 0);
+    self.tableView.contentInset = UIEdgeInsetsMake(5, 0, 0, 0);
     
     UINib *nib = [UINib nibWithNibName:@"HLTHeadlineViewCell" bundle:nil];
     [self.tableView registerNib:nib forCellReuseIdentifier:@"HLTHeadlineViewCell"];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    self.navigationController.navigationBar.frame = CGRectMake(0, 20, self.view.frame.size.width, 100);
 }
 
 - (NSArray *)headlinesArray
@@ -68,15 +81,20 @@
     //1.创建cell
     static NSString *reuseID = @"HLTHeadlineViewCell";
     HLTHeadlineViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseID];
-//    if (cell == nil) {
-//        cell = [[HLTHeadlineViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseID];
-//    }
     
     //2.传递数据模型来设置cell属性
     HLTHeadline *headline = self.headlinesArray[indexPath.row];
     cell.titleLabel.text = headline.title;
+    cell.userNameLabel.text = headline.userName;
     cell.createdDateLabel.text = headline.createdDate;
+    if (headline.readFirstImg) {
+        cell.thumbImageView.hidden = NO;
+        [cell.thumbImageView sd_setImageWithURL:[NSURL URLWithString:headline.readFirstImg]];
+    }else {
+        cell.thumbImageView.hidden = YES;
+    }
     [cell.voteButton setTitle:[NSString stringWithFormat:@"%@", headline.votesWord] forState:UIControlStateNormal];
+    [cell.commentButton setTitle:[NSString stringWithFormat:@"%@", headline.comments] forState:UIControlStateNormal];
     
     //3.返回cell
     return cell;

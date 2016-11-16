@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -20,7 +20,7 @@
                         <constraints>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="27" id="O8O-wF-hJT"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -30,7 +30,7 @@
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Vrx-hu-xuR"/>
                             <constraint firstAttribute="height" constant="20" id="uYO-Nt-8w5"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -40,29 +40,23 @@
                             <constraint firstAttribute="height" constant="20" id="PwT-tB-TTj"/>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="rwe-dM-OMF"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIS-00-sLU">
-                        <rect key="frame" x="8" y="54" width="35" height="20"/>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIS-00-sLU">
+                        <rect key="frame" x="8" y="54" width="45" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="CSH-tf-6aj"/>
-                            <constraint firstAttribute="height" constant="20" id="Li1-7I-fFo"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="45" id="CSH-tf-6aj"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Li1-7I-fFo"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        <state key="normal" title="1" image="vote_up_highlighted_new_15x14_">
+                        <inset key="titleEdgeInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="12" maxY="0.0"/>
+                        <state key="normal" title="55" image="vote_up_highlighted_new_15x14_">
                             <color key="titleColor" red="0.08235294118" green="0.59999999999999998" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
                     </button>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eCe-Ee-Fxd">
-                        <rect key="frame" x="242" y="2" width="70" height="75"/>
-                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="70" id="An7-5B-Ex1"/>
-                        </constraints>
-                    </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWf-cL-HC6">
                         <rect key="frame" x="8" y="79" width="312" height="1"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -70,18 +64,25 @@
                             <constraint firstAttribute="height" constant="1" id="0Rn-cw-OLV"/>
                         </constraints>
                     </view>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4L-Bg-fHy">
-                        <rect key="frame" x="51" y="54" width="35" height="20"/>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4L-Bg-fHy">
+                        <rect key="frame" x="61" y="54" width="40" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="20" id="9Tv-ZY-CTa"/>
-                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="yf7-Rc-SGg"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="750" constant="20" id="9Tv-ZY-CTa"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="yf7-Rc-SGg"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                         <inset key="titleEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        <state key="normal" title="0" image="comment_new_highlighted_15x14_">
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="12" maxY="0.0"/>
+                        <state key="normal" title="1" image="comment_new_highlighted_15x14_">
                             <color key="titleColor" red="0.08235294118" green="0.59999999999999998" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
                     </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eCe-Ee-Fxd">
+                        <rect key="frame" x="242" y="2" width="70" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="An7-5B-Ex1"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="eCe-Ee-Fxd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-6" id="6LW-fT-0yr"/>
@@ -93,7 +94,7 @@
                     <constraint firstItem="eCe-Ee-Fxd" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="NHg-PG-DMK"/>
                     <constraint firstItem="pWf-cL-HC6" firstAttribute="top" secondItem="RIS-00-sLU" secondAttribute="bottom" constant="5" id="QW4-Mn-Hta"/>
                     <constraint firstItem="QPD-Ak-P7X" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="XS2-VS-Uuc"/>
-                    <constraint firstItem="c4L-Bg-fHy" firstAttribute="leading" secondItem="RIS-00-sLU" secondAttribute="trailing" constant="8" id="XVD-S6-dgx"/>
+                    <constraint firstItem="c4L-Bg-fHy" firstAttribute="leading" secondItem="RIS-00-sLU" secondAttribute="trailing" priority="750" constant="8" id="XVD-S6-dgx"/>
                     <constraint firstItem="eCe-Ee-Fxd" firstAttribute="leading" secondItem="QPD-Ak-P7X" secondAttribute="trailing" constant="8" id="cqy-tV-Ktc"/>
                     <constraint firstAttribute="trailingMargin" secondItem="pWf-cL-HC6" secondAttribute="trailing" constant="-8" id="emB-yh-fDl"/>
                     <constraint firstItem="RIS-00-sLU" firstAttribute="leading" secondItem="U4N-QK-ZO9" secondAttribute="leading" id="f4i-Xg-gY5"/>
@@ -112,10 +113,10 @@
                     </mask>
                 </variation>
             </tableViewCellContentView>
-            <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
             <connections>
                 <outlet property="commentButton" destination="c4L-Bg-fHy" id="YAN-rn-uZH"/>
                 <outlet property="createdDateLabel" destination="HwA-5V-4ML" id="Rj2-Oe-TpN"/>
+                <outlet property="thumbImageView" destination="eCe-Ee-Fxd" id="MVI-6T-jlX"/>
                 <outlet property="titleLabel" destination="QPD-Ak-P7X" id="BRg-f8-nOP"/>
                 <outlet property="userNameLabel" destination="U4N-QK-ZO9" id="Rmm-yi-Li0"/>
                 <outlet property="voteButton" destination="RIS-00-sLU" id="Ohk-QV-wHA"/>

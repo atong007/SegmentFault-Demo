@@ -8,8 +8,7 @@
 
 #import "HLTTabBarButton.h"
 
-#define kHLTTabBarButtonScale 0.7
-#define kColorWithRGB(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define kHLTTabBarButtonScale 0.55
 
 @implementation HLTTabBarButton
 
@@ -40,7 +39,7 @@
 {
     CGFloat imageW = contentRect.size.width;
     CGFloat imageH = contentRect.size.height * kHLTTabBarButtonScale;;
-    return CGRectMake(0, 0, imageW, imageH);
+    return CGRectMake(0, 3, imageW, imageH);
 }
 
 - (CGRect)titleRectForContentRect:(CGRect)contentRect

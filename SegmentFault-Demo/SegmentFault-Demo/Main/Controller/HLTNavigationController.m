@@ -7,26 +7,32 @@
 //
 
 #import "HLTNavigationController.h"
-#import "HLTNavigationBar.h"
+#import "UIImage+HLTExtension.h"
+#import "UINavigationBar+BackgroundColor.h"
 
 @implementation HLTNavigationController
 
-- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (instancetype)initWithRootViewController:(UIViewController *)rootViewController
 {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        HLTNavigationBar *customNavigationBar = [[HLTNavigationBar alloc] initWithFrame:CGRectMake(0, 0, self.navigationBar.frame.size.width, 100)];
-        [self.navigationBar addSubview:customNavigationBar];
+    if (self = [super initWithRootViewController:rootViewController]) {
+        NSDictionary *attributeDict = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
+        self.navigationBar.titleTextAttributes = attributeDict;
+        
+//        UIImage *image = [[UIImage imageNamed:@"back_arrow_13x21_"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 30, 0, 0)];
+//        [[UIBarButtonItem appearance] setBackButtonBackgroundImage:image forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+        [[UIBarButtonItem appearance] setTintColor:[UIColor whiteColor]];
+//        [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(NSIntegerMin, NSIntegerMin) forBarMetrics:UIBarMetricsDefault];
+        
+//        self.navigationBar.barTintColor = nil;
+        self.navigationBar.backgroundColor = nil;
+        [self.navigationBar hlt_setBackgroundColor:kColorWithRGB(22, 153, 99)];
+
     }
     return self;
 }
 
-/**
- *  在此之前设置的navigationBar的frame会被重置
- */
-- (void)viewDidAppear:(BOOL)animated
+- (UIStatusBarStyle)preferredStatusBarStyle
 {
-    [super viewDidAppear:animated];
-//    self.navigationBar.frame = CGRectMake(0, 0, self.view.frame.size.width, 100);
+    return UIStatusBarStyleLightContent;
 }
-
 @end

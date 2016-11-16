@@ -1,0 +1,25 @@
+//
+//  Segmentfault-Prefix.pch
+//  SegmentFault-Demo
+//
+//  Created by 洪龙通 on 2016/11/15.
+//  Copyright © 2016年 Atong007. All rights reserved.
+//
+
+#ifndef Segmentfault_Prefix_pch
+#define Segmentfault_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+//#import <UIKit/UIKit.h>
+//#import <Foundation/Foundation.h>
+
+#define kColorWithRGB(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define kTitleFont [UIFont systemFontOfSize:15.0]
+#define kSearchBarFont [UIFont systemFontOfSize:14.0]
+
+#endif
+
+#endif /* Segmentfault_Prefix_pch */
