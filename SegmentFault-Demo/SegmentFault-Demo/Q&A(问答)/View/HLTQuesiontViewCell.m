@@ -124,7 +124,6 @@
     for (UIButton *button in self.tagButtons) {
         if (!button.hidden) {
             button.hidden = YES;
-            
         }
     }
     

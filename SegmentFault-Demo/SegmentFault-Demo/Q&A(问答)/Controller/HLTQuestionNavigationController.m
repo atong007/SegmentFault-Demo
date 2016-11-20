@@ -15,13 +15,14 @@
 
 @implementation HLTQuestionNavigationController
 
-- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (instancetype)initWithRootViewController:(UIViewController *)rootViewController
 {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+    if (self = [super initWithRootViewController:rootViewController]) {
         NSArray *tagsArray = @[@"推荐的", @"热门的", @"全部的"];
         HLTQuestionNavigationBar *customNavigationBar = [HLTQuestionNavigationBar navigationBarWithTags:tagsArray];
         self.navigationBar.userInteractionEnabled = YES;
         [self.navigationBar addSubview:customNavigationBar];
+        customNavigationBar.delegate = rootViewController;
     }
     return self;
 }

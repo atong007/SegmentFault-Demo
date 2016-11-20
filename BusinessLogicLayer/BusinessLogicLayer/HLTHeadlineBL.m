@@ -9,7 +9,7 @@
 #import "HLTHeadlineBL.h"
 #import "PersistenceLayer/HLTHeadlineDao.h"
 
-#define kURLOfHeadline @"https://api.segmentfault.com/news/rank?channel=ch&page=1"
+#define kURLOfHeadline @"https://api.segmentfault.com/news/rank?channel=cl&page=1"
 
 @implementation HLTHeadlineBL
 
@@ -18,9 +18,9 @@
     HLTHeadlineDao *headlineDao = [HLTHeadlineDao sharedInstance];
     NSString *urlString = [kURLOfHeadline stringByReplacingOccurrencesOfString:@"rank" withString:rank];
     if (channel.length < 1) {
-        urlString = [urlString stringByReplacingOccurrencesOfString:@"=ch" withString:@""];
+        urlString = [urlString stringByReplacingOccurrencesOfString:@"=cl" withString:@""];
     }else {
-        urlString = [urlString stringByReplacingOccurrencesOfString:@"ch" withString:channel];
+        urlString = [urlString stringByReplacingOccurrencesOfString:@"cl" withString:channel];
     }
 
     [headlineDao loadHeadlinesWithURLString:urlString parameters:nil success:^(NSArray *array) {

@@ -11,11 +11,12 @@
 #import "PersistenceLayer/HLTSpecialColumn.h"
 #import "HLTSpecialColumnViewCell.h"
 #import "UITableView+FDTemplateLayoutCell.h"
+#import "HLTProtocol.h"
 
-
-@interface HLTSpecialColumnViewController ()
+@interface HLTSpecialColumnViewController () <HLTProtocolDelegate>
 
 @property (nonatomic, copy) NSArray *specialColumnList;
+@property (nonatomic, copy) NSArray *typesArray;
 @end
 
 @implementation HLTSpecialColumnViewController
@@ -26,7 +27,7 @@ static NSString *reuseID = @"HLTSpecialColumnViewCell";
 {
     self = [super init];
     if (self) {
-        [self loadSpecialColumnList];
+        [self loadSpecialColumnListWithType:@"newest"];
     }
     return self;
 }
@@ -39,8 +40,6 @@ static NSString *reuseID = @"HLTSpecialColumnViewCell";
 
     // 注册cell
     [self.tableView registerClass:[HLTSpecialColumnViewCell class] forCellReuseIdentifier:reuseID];
-    
-    // 加载数据
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -50,11 +49,11 @@ static NSString *reuseID = @"HLTSpecialColumnViewCell";
     self.navigationController.navigationBar.frame = CGRectMake(0, 20, self.view.frame.size.width, 100);
 }
 
-- (void)loadSpecialColumnList
+- (void)loadSpecialColumnListWithType:(NSString *)type
 {
     HLTSpecialColumnBL *specialColumnBL = [[HLTSpecialColumnBL alloc] init];
     __weak typeof(self) weakSelf = self;
-    [specialColumnBL loadSpecialColumnsWithType:@"newest" parameters:nil success:^(NSArray *array) {
+    [specialColumnBL loadSpecialColumnsWithType:type parameters:nil success:^(NSArray *array) {
         __strong typeof(self) strongSelf = weakSelf;
         strongSelf.specialColumnList = array;
         [strongSelf.tableView reloadData];
@@ -64,12 +63,22 @@ static NSString *reuseID = @"HLTSpecialColumnViewCell";
     }];
 }
 
+- (NSArray *)typesArray
+{
+    return @[@"newest", @"hottest", @"recommendable"];
+}
+
 - (NSArray *)specialColumnList
 {
     if (!_specialColumnList) {
         _specialColumnList = [NSArray array];
     }
     return _specialColumnList;
+}
+
+- (void)changeTagsViewToIndex:(NSUInteger)index
+{
+    [self loadSpecialColumnListWithType:self.typesArray[index]];
 }
 
 #pragma mark - table view datasource & delegate

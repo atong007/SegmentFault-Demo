@@ -15,13 +15,14 @@
 
 @implementation HLTSpecialColumnNavigationController
 
-- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (instancetype)initWithRootViewController:(UIViewController *)rootViewController
 {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+    if (self = [super initWithRootViewController:rootViewController]) {
         NSArray *tagsArray = @[@"最新的", @"热门的", @"未回答的"];
         HLTSpecialColumnNavigationBar *customNavigationBar = [HLTSpecialColumnNavigationBar navigationBarWithTags:tagsArray];
         self.navigationBar.userInteractionEnabled = YES;
         [self.navigationBar addSubview:customNavigationBar];
+        customNavigationBar.delegate = rootViewController;
     }
     return self;
 }

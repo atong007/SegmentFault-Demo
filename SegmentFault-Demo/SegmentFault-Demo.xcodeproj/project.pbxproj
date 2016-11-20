@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		616F44E6F9C139C33058E425 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 782A331AC79E3D55EF23B0E7 /* libPods.a */; };
+		EE011AD31DE078C800BDA3BB /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE011AD21DE078C800BDA3BB /* BusinessLogicLayer.framework */; };
+		EE011AD41DE078C800BDA3BB /* BusinessLogicLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE011AD21DE078C800BDA3BB /* BusinessLogicLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EE011AD61DE078CC00BDA3BB /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE011AD51DE078CC00BDA3BB /* PersistenceLayer.framework */; };
+		EE011AD71DE078CC00BDA3BB /* PersistenceLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE011AD51DE078CC00BDA3BB /* PersistenceLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EE088C621DCB86A500BFC241 /* HLTHeadlineNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE088C611DCB86A500BFC241 /* HLTHeadlineNavigationController.m */; };
 		EE088C651DCB875700BFC241 /* HLTHeadlineNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EE088C641DCB875700BFC241 /* HLTHeadlineNavigationBar.m */; };
 		EE088C681DCBA6E800BFC241 /* HLTQuestionNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE088C671DCBA6E800BFC241 /* HLTQuestionNavigationController.m */; };
@@ -46,10 +50,6 @@
 		EE4073211DC9E01A006AAE6C /* HLTBaseNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4073201DC9E01A006AAE6C /* HLTBaseNavigationBar.m */; };
 		EE4073271DC9E4FE006AAE6C /* HLTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4073261DC9E4FE006AAE6C /* HLTNavigationController.m */; };
 		EE4073291DC9EFB9006AAE6C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE4073281DC9EFB9006AAE6C /* Launch Screen.storyboard */; };
-		EE7921841DDB3BD000698A8A /* BusinessLogicLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7921831DDB3BD000698A8A /* BusinessLogicLayer.framework */; };
-		EE7921851DDB3BD000698A8A /* BusinessLogicLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE7921831DDB3BD000698A8A /* BusinessLogicLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EE7921881DDB3BD400698A8A /* PersistenceLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7921871DDB3BD400698A8A /* PersistenceLayer.framework */; };
-		EE7921891DDB3BD400698A8A /* PersistenceLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EE7921871DDB3BD400698A8A /* PersistenceLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EE8DDE3F1DD6EC530034DE72 /* HLTMyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8DDE3D1DD6EC530034DE72 /* HLTMyCollectionViewCell.m */; };
 		EE8DDE401DD6EC530034DE72 /* HLTMyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE8DDE3E1DD6EC530034DE72 /* HLTMyCollectionViewCell.xib */; };
 		EE8DDE441DD6F9320034DE72 /* HLTQuesiontViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE8DDE421DD6F9320034DE72 /* HLTQuesiontViewCell.m */; };
@@ -105,8 +105,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EE7921891DDB3BD400698A8A /* PersistenceLayer.framework in Embed Frameworks */,
-				EE7921851DDB3BD000698A8A /* BusinessLogicLayer.framework in Embed Frameworks */,
+				EE011AD71DE078CC00BDA3BB /* PersistenceLayer.framework in Embed Frameworks */,
+				EE011AD41DE078C800BDA3BB /* BusinessLogicLayer.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,6 +117,9 @@
 		782A331AC79E3D55EF23B0E7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		82F25570F255E82BE1467012 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E1742B9171312F60A5B35CD8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		EE011AD21DE078C800BDA3BB /* BusinessLogicLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BusinessLogicLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE011AD51DE078CC00BDA3BB /* PersistenceLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PersistenceLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE011AD91DE145B400BDA3BB /* HLTProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLTProtocol.h; sourceTree = "<group>"; };
 		EE088C601DCB86A500BFC241 /* HLTHeadlineNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTHeadlineNavigationController.h; sourceTree = "<group>"; };
 		EE088C611DCB86A500BFC241 /* HLTHeadlineNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTHeadlineNavigationController.m; sourceTree = "<group>"; };
 		EE088C631DCB875700BFC241 /* HLTHeadlineNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HLTHeadlineNavigationBar.h; path = "SegmentFault-Demo/Headline(头条)/View/HLTHeadlineNavigationBar.h"; sourceTree = SOURCE_ROOT; };
@@ -191,11 +194,7 @@
 		EE6553EF1DD9EAC2000E0BFD /* BusinessLogicLayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BusinessLogicLayer.framework; path = "../BusinessLogicLayer/build/Debug-iphoneos/BusinessLogicLayer.framework"; sourceTree = "<group>"; };
 		EE6553F11DD9EB66000E0BFD /* PersistenceLayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PersistenceLayer.framework; path = "../PersistenceLayer/build/Debug-iphoneos/PersistenceLayer.framework"; sourceTree = "<group>"; };
 		EE6553F31DD9EB6A000E0BFD /* BusinessLogicLayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BusinessLogicLayer.framework; path = "../BusinessLogicLayer/build/Debug-iphoneos/BusinessLogicLayer.framework"; sourceTree = "<group>"; };
-		EE6553F51DD9EB85000E0BFD /* BusinessLogicLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = BusinessLogicLayer.framework; path = "/Users/atong007/Library/Developer/Xcode/DerivedData/SegmentFault-Demo-bebuzzzintowlkerqaktyjjyyrsu/Build/Products/Debug-iphonesimulator/BusinessLogicLayer.framework"; sourceTree = "<absolute>"; };
-		EE6553F91DD9EB89000E0BFD /* PersistenceLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = PersistenceLayer.framework; path = "/Users/atong007/Library/Developer/Xcode/DerivedData/SegmentFault-Demo-bebuzzzintowlkerqaktyjjyyrsu/Build/Products/Debug-iphonesimulator/PersistenceLayer.framework"; sourceTree = "<absolute>"; };
 		EE6834FF1DDAAB4500BAEBC1 /* Segmentfault-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Segmentfault-Prefix.pch"; sourceTree = "<group>"; };
-		EE7921831DDB3BD000698A8A /* BusinessLogicLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = BusinessLogicLayer.framework; path = "/Users/atong007/Library/Developer/Xcode/DerivedData/SegmentFault-Demo-bebuzzzintowlkerqaktyjjyyrsu/Build/Products/Debug-iphoneos/BusinessLogicLayer.framework"; sourceTree = "<absolute>"; };
-		EE7921871DDB3BD400698A8A /* PersistenceLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = PersistenceLayer.framework; path = "/Users/atong007/Library/Developer/Xcode/DerivedData/SegmentFault-Demo-bebuzzzintowlkerqaktyjjyyrsu/Build/Products/Debug-iphoneos/PersistenceLayer.framework"; sourceTree = "<absolute>"; };
 		EE8DDE3C1DD6EC530034DE72 /* HLTMyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTMyCollectionViewCell.h; sourceTree = "<group>"; };
 		EE8DDE3D1DD6EC530034DE72 /* HLTMyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTMyCollectionViewCell.m; sourceTree = "<group>"; };
 		EE8DDE3E1DD6EC530034DE72 /* HLTMyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLTMyCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -273,8 +272,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				616F44E6F9C139C33058E425 /* libPods.a in Frameworks */,
-				EE7921881DDB3BD400698A8A /* PersistenceLayer.framework in Frameworks */,
-				EE7921841DDB3BD000698A8A /* BusinessLogicLayer.framework in Frameworks */,
+				EE011AD61DE078CC00BDA3BB /* PersistenceLayer.framework in Frameworks */,
+				EE011AD31DE078C800BDA3BB /* BusinessLogicLayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +306,21 @@
 				82F25570F255E82BE1467012 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		EE011AD11DE04D9F00BDA3BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE011AD81DE1457000BDA3BB /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				EE011AD91DE145B400BDA3BB /* HLTProtocol.h */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		EE088C751DCCBAEF00BFC241 /* Discover(发现) */ = {
@@ -507,10 +521,8 @@
 		EE40729D1DC7456A006AAE6C = {
 			isa = PBXGroup;
 			children = (
-				EE7921871DDB3BD400698A8A /* PersistenceLayer.framework */,
-				EE7921831DDB3BD000698A8A /* BusinessLogicLayer.framework */,
-				EE6553F91DD9EB89000E0BFD /* PersistenceLayer.framework */,
-				EE6553F51DD9EB85000E0BFD /* BusinessLogicLayer.framework */,
+				EE011AD51DE078CC00BDA3BB /* PersistenceLayer.framework */,
+				EE011AD21DE078C800BDA3BB /* BusinessLogicLayer.framework */,
 				EE4072A81DC7456A006AAE6C /* SegmentFault-Demo */,
 				EE4072C21DC7456A006AAE6C /* SegmentFault-DemoTests */,
 				EE4072A71DC7456A006AAE6C /* Products */,
@@ -568,6 +580,7 @@
 			children = (
 				EE4072E01DC74DBA006AAE6C /* Controller */,
 				EE4072E11DC74DBA006AAE6C /* View */,
+				EE011AD11DE04D9F00BDA3BB /* Model */,
 			);
 			path = "Headline(头条)";
 			sourceTree = "<group>";
@@ -674,6 +687,7 @@
 		EE4072FD1DC8975D006AAE6C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				EE011AD81DE1457000BDA3BB /* Protocol */,
 				EE4072FE1DC8975D006AAE6C /* Controller */,
 				EE4072FF1DC8975D006AAE6C /* View */,
 			);
@@ -1142,6 +1156,7 @@
 			baseConfigurationReference = E1742B9171312F60A5B35CD8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GRT2DH3R4P;
 				INFOPLIST_FILE = "SegmentFault-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "honglt.SegmentFault-Demo";
@@ -1154,6 +1169,7 @@
 			baseConfigurationReference = 82F25570F255E82BE1467012 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GRT2DH3R4P;
 				INFOPLIST_FILE = "SegmentFault-Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "honglt.SegmentFault-Demo";

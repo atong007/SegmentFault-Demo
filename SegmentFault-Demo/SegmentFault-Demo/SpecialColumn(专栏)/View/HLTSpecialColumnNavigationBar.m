@@ -60,7 +60,10 @@
     self.currentTabBtn.alpha = 0.6;
     tagButton.alpha = 1.0;
     self.currentTabBtn = tagButton;
-    NSLog(@"%d", tagButton.tag);
+    
+    if ([self.delegate respondsToSelector:@selector(changeTagsViewToIndex:)]) {
+        [self.delegate changeTagsViewToIndex:tagButton.tag];
+    }
 }
 
 @end

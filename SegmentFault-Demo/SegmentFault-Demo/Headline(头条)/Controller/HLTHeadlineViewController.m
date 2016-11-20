@@ -11,10 +11,13 @@
 #import "PersistenceLayer/HLTHeadline.h"
 #import "HLTHeadlineViewCell.h"
 #import "UIImageView+WebCache.h"
+#import "HLTProtocol.h"
 
-@interface HLTHeadlineViewController ()
+@interface HLTHeadlineViewController ()<HLTProtocolDelegate>
 
 @property (nonatomic, copy) NSArray *headlinesArray;
+@property (nonatomic, copy) NSArray *channelsArray;
+
 @end
 
 @implementation HLTHeadlineViewController
@@ -23,7 +26,7 @@
 {
     self = [super init];
     if (self) {
-        [self loadHeadlineList];
+        [self loadHeadlineListWithChannel:@""];
     }
     return self;
 }
@@ -37,6 +40,7 @@
     
     UINib *nib = [UINib nibWithNibName:@"HLTHeadlineViewCell" bundle:nil];
     [self.tableView registerNib:nib forCellReuseIdentifier:@"HLTHeadlineViewCell"];
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -53,11 +57,16 @@
     return _headlinesArray;
 }
 
-- (void)loadHeadlineList
+- (NSArray *)channelsArray
+{
+    return @[@"", @"frontend", @"backend", @"ios", @"android", @"netsec", @"tools", @"programmer", @"industry"];
+}
+
+- (void)loadHeadlineListWithChannel:(NSString *)channel
 {
     HLTHeadlineBL *headlineBL = [[HLTHeadlineBL alloc] init];
     __weak typeof(self) weakSelf = self;
-    [headlineBL loadHeadlinesWithChannel:@"" rank:@"rank" success:^(NSArray *array) {
+    [headlineBL loadHeadlinesWithChannel:channel rank:@"rank" success:^(NSArray *array) {
         __strong typeof(self) strongSelf = weakSelf;
         strongSelf.headlinesArray = array;
         [strongSelf.tableView reloadData];
@@ -65,6 +74,12 @@
     } failure:^(NSError *error) {
         NSLog(@"loadHeadlineList Error:%@", error);
     }];
+}
+
+// HLTHeadlineNavigationBarDelegate
+- (void)changeTagsViewToIndex:(NSUInteger)index
+{
+    [self loadHeadlineListWithChannel:self.channelsArray[index]];
 }
 
 #pragma mark - Table view data source

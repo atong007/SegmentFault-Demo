@@ -8,6 +8,8 @@
 
 #import "HLTNavigationController.h"
 
+@class HLTQuestionNavigationBar;
 @interface HLTQuestionNavigationController : HLTNavigationController
 
+@property(nonatomic, weak) HLTQuestionNavigationBar *customNavigationBar;
 @end

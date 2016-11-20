@@ -15,13 +15,15 @@
 
 @implementation HLTHeadlineNavigationController
 
-- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (instancetype)initWithRootViewController:(UIViewController *)rootViewController
 {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+    if (self = [super initWithRootViewController:rootViewController]) {
         NSArray *tagsArray = @[@"全部", @"前端", @"后端", @"iOS", @"Android", @"安全", @"工具", @"程序猿", @"行业"];
         HLTHeadlineNavigationBar *customNavigationBar = [HLTHeadlineNavigationBar navigationBarWithTags:tagsArray];
+        
         self.navigationBar.userInteractionEnabled = YES;
         [self.navigationBar addSubview:customNavigationBar];
+        customNavigationBar.delegate = rootViewController;
     }
     return self;
 }

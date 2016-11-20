@@ -10,10 +10,14 @@
 #import "BusinessLogicLayer/HLTQuestionBL.h"
 #import "PersistenceLayer/HLTQuestion.h"
 #import "HLTQuesiontViewCell.h"
+#import "HLTProtocol.h"
 
-@interface HLTQuestionViewController ()
+
+@interface HLTQuestionViewController () <HLTProtocolDelegate>
 
 @property (nonatomic, copy) NSArray *questionsArray;
+@property (nonatomic, copy) NSArray *typesArray;
+
 @end
 
 @implementation HLTQuestionViewController
@@ -24,7 +28,7 @@ static NSString *reuseID = @"UITableViewCell";
 {
     self = [super init];
     if (self) {
-        [self loadQuestionList];
+        [self loadQuestionListWithType:@"newest"];
     }
     return self;
 }
@@ -38,6 +42,8 @@ static NSString *reuseID = @"UITableViewCell";
     // 注册cell
     [self.tableView registerClass:[HLTQuesiontViewCell class] forCellReuseIdentifier:reuseID];
     
+//    HLTQuestionNavigationController *customNaviController = (HLTQuestionNavigationBar *)    self.navigationController;
+//    customNaviController.customNavigationBar.delegate = self;
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -55,11 +61,16 @@ static NSString *reuseID = @"UITableViewCell";
     return _questionsArray;
 }
 
-- (void)loadQuestionList
+- (NSArray *)typesArray
+{
+    return @[@"newest", @"hottest", @"recommendable"];
+}
+
+- (void)loadQuestionListWithType:(NSString *)type
 {
     HLTQuestionBL *questionBL = [[HLTQuestionBL alloc] init];
     __weak typeof(self) weakSelf = self;
-    [questionBL loadQuestionsWithType:@"newest" parameters:nil success:^(NSArray *array) {
+    [questionBL loadQuestionsWithType:type parameters:nil success:^(NSArray *array) {
         __strong typeof(self) strongSelf = weakSelf;
         strongSelf.questionsArray = array;
         [strongSelf.tableView reloadData];
@@ -67,6 +78,11 @@ static NSString *reuseID = @"UITableViewCell";
     } failure:^(NSError *error) {
         NSLog(@"loadQuestionList Error:%@", error);
     }];
+}
+
+- (void)changeTagsViewToIndex:(NSUInteger)index
+{
+    [self loadQuestionListWithType:self.typesArray[index]];
 }
 
 #pragma mark - Table view data source

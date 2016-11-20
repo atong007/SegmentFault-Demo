@@ -7,8 +7,11 @@
 //
 
 #import "HLTBaseNavigationBar.h"
+#import "HLTProtocol.h"
 
 @interface HLTSpecialColumnNavigationBar : HLTBaseNavigationBar
+
+@property (nonatomic, weak) id<HLTProtocolDelegate> delegate;
 
 + (instancetype)navigationBarWithTags:(NSArray *)tagsArray;
 @end
